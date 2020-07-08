@@ -1,0 +1,29 @@
+version: '3'
+services:
+  app:
+    build: app
+    volumes:
+      - ./app:/app
+      - gem_data:/usr/local/bundle
+    command: bundle exec puma -C config/puma.rb
+    tty: true 
+    stdin_open: true
+    depends_on:
+      - db
+  nginx:
+    build: nginx
+    volumes:
+      - ./app:/app
+      - ./nginx/ssl:/etc/nginx/ssl
+    ports:
+      - 80:80
+    depends_on:
+      - app
+  db:
+    image: mysql:5.7
+    env_file:
+      - ./mysql/db.env
+    volumes:
+      - ./mysql/mysql:/var/lib/mysql
+volumes:
+  gem_data:

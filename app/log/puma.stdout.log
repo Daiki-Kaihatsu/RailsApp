@@ -1,0 +1,5 @@
+=== puma startup: 2020-07-08 15:13:20 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-08 15:18:34 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-08 15:18:54 +0000 ===
