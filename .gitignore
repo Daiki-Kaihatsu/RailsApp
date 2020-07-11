@@ -28,3 +28,7 @@
 
 # mysql
 /mysql/
+
+.DS_Store
+/vendor/bundle
+/.idea

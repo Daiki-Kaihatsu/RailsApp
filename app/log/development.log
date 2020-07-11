@@ -71,3 +71,1621 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:33:37 +0000
+  [1m[35m (2.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 11ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ bin/rails:4
+  [1m[35m (28.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:4
+  [1m[35m (18.4ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Migrating to DeviseCreateUsers (20200708154141)
+  [1m[35m (21.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20200708154141_devise_create_users.rb:5
+  [1m[35m (25.3ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  ↳ db/migrate/20200708154141_devise_create_users.rb:39
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  ↳ db/migrate/20200708154141_devise_create_users.rb:40
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20200708154141')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ bin/rails:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:4
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2020-07-08 15:42:16', '2020-07-08 15:42:16')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  ↳ bin/rails:4
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ bin/rails:4
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:42:27 +0000
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x0000557df55fd8b8>):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:43:12 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 765ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Autoprefixer doesn’t support Node v4.8.2. Update it.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__492604548186721360_47221379458460'
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:44:02 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 763ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Autoprefixer doesn’t support Node v4.8.2. Update it.):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__492604548186721360_70225546672100'
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:50:54 +0000
+  [1m[35m (1.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (15.9ms)
+  Rendered shared/_header.html.erb (3.9ms)
+Completed 200 OK in 4286ms (Views: 4265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-08 15:51:27 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application (1574.0ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 1869ms (Views: 1847.9ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-08 15:51:36 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"saqFLXajdOsqp2JQFYF3MkbnrIFb1dtEFKdZlbNpdwXP5zYylDyfs0GLOJk0juQF8eCmB7/o0Gg1UkIAHbYZZw==", "user"=>{"email"=>"daiki@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'daiki@example.com' LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('daiki@example.com', '$2a$12$PM3k5XF7jHI4J2Zb0iMryejNLoYL3PIDa09uKmTmH8l7MZBkQmHvG', '2020-07-08 15:51:37', '2020-07-08 15:51:37')[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 244ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:51:37 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (11.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (6.0ms)
+Completed 200 OK in 253ms (Views: 237.9ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-08 15:51:47 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9VkFBPAv6rMtDbo3X1O4j02ohSmni55G1xhAotMsF6vwbhFtwJYamP0pwBDo6sSX8/XB3ojMHHLumAQSxUAFog=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:51:47 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (13.0ms)
+  Rendered shared/_header.html.erb (1.7ms)
+Completed 200 OK in 257ms (Views: 246.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-08 15:51:49 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 269ms (Views: 266.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-08 15:51:55 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"55TL+zvVYBjjllyzaTpwhOvOF0rNiGIbhy6n5MNs7T6vlTgEH9VXlqwCrhiePQPaSUdlTv9nhQVQiO/35Diavg==", "user"=>{"email"=>"daiki@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'daiki@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 224ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-08 15:51:56 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (10.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.8ms)
+Completed 200 OK in 237ms (Views: 225.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:11:55 +0000
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (11.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (21.3ms)
+Completed 200 OK in 1539ms (Views: 1511.7ms | ActiveRecord: 8.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 02:13:28 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tz1ZNtSYQX8hvH5QewALj77OGO26uiX660XR3XS9ZWOsnvwODq9MRyq28uAOdPoy9V+yDGlWyzgyxDxM6yXkpw=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 543ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:13:29 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (13.3ms)
+  Rendered shared/_header.html.erb (4.1ms)
+Completed 200 OK in 277ms (Views: 265.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:13:32 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (1.5ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application (13.3ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 254ms (Views: 250.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:13:38 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XVSKLQ+BJiIg6u0nw2xYwJey7Q43vF1XtQPfnaNcoK6GXBtQTSUdfnvxpS46X3aRDNSqW1G0GEp8sj8bTKr15Q==", "user"=>{"email"=>"daiki@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'daiki@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 233ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:13:38 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (13.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.5ms)
+Completed 200 OK in 285ms (Views: 270.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:16:09 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (15.8ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (5.0ms)
+Completed 200 OK in 329ms (Views: 311.7ms | ActiveRecord: 1.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 02:16:17 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"d+gtt4FwNT6hH7O9Ghagd9Ae0NgLqex6R8jfsD/x4fFoWnw8x4d0LLPY6ooM0dDcKBrdjsGE8lBkgy8vBl/JmA=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:16:18 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (12.0ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 230ms (Views: 215.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:16:20 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 201ms (Views: 199.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:16:39 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/sessions/new.html.erb within layouts/application (456.1ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 1854ms (Views: 1830.6ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:16:44 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application (5.9ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 271ms (Views: 270.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:19:46 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/shared/_links.html.erb (2.3ms)
+  Rendered /usr/local/bundle/gems/devise-bootstrap-views-1.1.0views/devise/registrations/new.html.erb within layouts/application (624.5ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 2185ms (Views: 2160.7ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:20:37 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.9ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 467ms (Views: 465.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:21:23 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 274ms (Views: 273.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:22:53 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 297ms (Views: 296.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:23:52 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.9ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 347ms (Views: 346.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:23:55 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.0ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 302ms (Views: 300.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:24:12 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.7ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 326ms (Views: 324.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:24:17 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B4xhs/2l2Oa/g6o63YTwrueyYHVOKJRKdGjKufLZUzM4rbgMOF8Cjih/kvr2UWi22nwxQvE+NgVx1OUauZqrWw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.9ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 332ms (Views: 291.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-11 02:26:49 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:27:02 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (11.2ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 262ms (Views: 248.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:05 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 437ms (Views: 422.7ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:07 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4SxatWzy48m7/BJfbGwHJ/7shMLc4ysPhw5ARmHHyrb4cn4j9hPFiTCld4p/JswN5JUKFaTJz0Dy7X2R8mwfg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v4SxatWzy48m7/BJfbGwHJ/7shMLc4ysPhw5ARmHHyrb4cn4j9hPFiTCld4p/JswN5JUKFaTJz0Dy7X2R8mwfg==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.7ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 339ms (Views: 337.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:27:11 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.0ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 338ms (Views: 336.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:27:12 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7kdFImMlNb7p7NhT6OjQegSAQVFtvPdDlovgj9xFK//RZpydpt/v1n4Q4JPDPUhiOU4QZtKqVQyTN88slwbTlw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.6ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 479ms (Views: 437.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-11 02:27:42 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:27:48 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (15.1ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 295ms (Views: 278.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:51 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.7ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 270ms (Views: 268.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:52 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F6lUbKNkjEvdf/ypcBIKtECow7WQDtPxSwD8TZS1qx9zzCz++Q8I0t9SmT4kXyGY6MEljs3ueGB213C6yvsESw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F6lUbKNkjEvdf/ypcBIKtECow7WQDtPxSwD8TZS1qx9zzCz++Q8I0t9SmT4kXyGY6MEljs3ueGB213C6yvsESw==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.5ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 304ms (Views: 303.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:54 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7fVWswfsOgr4IBLQBhJxG+5fG5c2/2JZfOEObduu0u0RThSTBCF2GaibHr4QJl/qFJC97A3mOJKnTpepCI5M+A==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7fVWswfsOgr4IBLQBhJxG+5fG5c2/2JZfOEObduu0u0RThSTBCF2GaibHr4QJl/qFJC97A3mOJKnTpepCI5M+A==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.0ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 308ms (Views: 306.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:27:58 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 395ms (Views: 393.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:28:06 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRvmIpbOV4POTq2NlxSSTJoY7t9SO3RVd/S3KWr+9hJtoKQClQMbkJ71oeOBILy9YNdIpGkiLp6sWy7tud5oBw==", "user"=>{"email"=>"x@s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kRvmIpbOV4POTq2NlxSSTJoY7t9SO3RVd/S3KWr+9hJtoKQClQMbkJ71oeOBILy9YNdIpGkiLp6sWy7tud5oBw==", "user"=>{"email"=>"x@s", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.3ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 430ms (Views: 429.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:28:09 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 353ms (Views: 351.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:28:11 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"827wnTIYMEbnI3KcRNSfoNfMj2lWNQXSdmm89BHx9pTMTyki9+LqLnDfSlxvAQe46gLeXukjp51z1ZNXWrIO/A==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.1ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 430ms (Views: 392.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-11 02:28:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:28:19 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.1ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 334ms (Views: 333.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:28:21 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r6QSdKy18LR1oK4FSgv4eLhKkbFoHeuRSD9hV7C+AhFTH1BUr3i8pyUbomtcP9aJQoU3ylMEsVqTkPiTY56cBA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.9ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 360ms (Views: 321.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:28:35 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 304ms (Views: 302.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:28:39 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.3ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 318ms (Views: 317.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:28:41 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YS83vrECCn8oy3zlICGBV1uoJOUsNM+er/GPKjUcrRxeDu4BdPjQF783RCUL9BlPZmZ10pMibdGqTaCJfl9VdA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.4ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 340ms (Views: 303.6ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:28:52 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HGb+MhHz1ZtROctzY2gQrSZsMn85qN3jA6oBx0fQtoXg3bwSEj6ZiAGCxx11XD5c3KOUBAKxhyjYBZgDlPAokA==", "user"=>{"email"=>"ssss@ss", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'ssss@ss' LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.3ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 282ms (Views: 250.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:28:57 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (16.5ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 321ms (Views: 303.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:34:41 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (79.8ms)
+  Rendered shared/_header.html.erb (1.6ms)
+Completed 200 OK in 526ms (Views: 515.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:35:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/app/app/views/devise/sessions/new.html.erb:14: syntax error, unexpected ':', expecting ')'
+...                      required: true,
+...                              ^
+/app/app/views/devise/sessions/new.html.erb:14: Can't assign to true
+...                required: true,
+...                              ^):
+  
+app/views/devise/sessions/new.html.erb:14: syntax error, unexpected ':', expecting ')'
+app/views/devise/sessions/new.html.erb:14: Can't assign to true
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:35:10 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.7ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 392ms (Views: 390.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:35:17 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.4ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 295ms (Views: 293.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-11 02:35:24 +0000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zIXQyYtiGXYnDzRCztnPPEfI56FQvKzWTmd5fzh1TpHzpAl2TpjDHrDzDILlDFckega2lu+qDplL21bccza2+Q==", "user"=>{"email"=>"a@aa.aa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'a@aa.aa' LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (25.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 479ms (Views: 433.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-11 02:36:30 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.3) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:36:35 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (21.6ms)
+  Rendered shared/_header.html.erb (1.6ms)
+Completed 200 OK in 403ms (Views: 401.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:37:01 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.0ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 409ms (Views: 408.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:37:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 270ms (Views: 268.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:38:13 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.7ms)
+  Rendered shared/_header.html.erb (1.7ms)
+Completed 200 OK in 300ms (Views: 299.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:42:15 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 324ms (Views: 323.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:43:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 308ms (Views: 307.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:43:21 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.8ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 303ms (Views: 302.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:43:36 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 284ms (Views: 282.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 02:45:27 +0000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.8ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 411ms (Views: 401.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:45:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 325ms (Views: 323.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:45:51 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vaIges5Pe3qhz5kPdmzdYHOuj8PvQPLL693kwYHYGTDZx1jolCT/46Pi/JgiIfZM28dp+LKgWVrWCmg235a2ZA==", "user"=>{"email"=>"daiki@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'daiki@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 296ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:45:52 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (20.2ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.8ms)
+Completed 200 OK in 410ms (Views: 392.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:46:03 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (14.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.2ms)
+Completed 200 OK in 313ms (Views: 292.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:46:37 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (16.4ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (55.2ms)
+Completed 500 Internal Server Error in 371ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `user_path' for #<#<Class:0x00007f9c7d16abb8>:0x00007f9c600ffb28>):
+    24:             </button>
+    25:             <div class="dropdown-menu dropdown-menu-right">
+    26:               <%= link_to '新規投稿','#',class: 'dropdown-item' %>
+    27:               <%= link_to 'マイページ',current_user,class: 'dropdown-item' %>
+    28:               <div class="dropdown-divider"></div>
+    29:                 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+    30:               </div>
+  
+app/views/shared/_header.html.erb:27:in `_app_views_shared__header_html_erb___3594863445771435507_70155058100480'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___2151567856697338757_70154801621240'
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:46:56 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (12.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (57.6ms)
+Completed 500 Internal Server Error in 319ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user_path' for #<#<Class:0x00007f9c7d16abb8>:0x00007f9c74250fe0>):
+    24:             </button>
+    25:             <div class="dropdown-menu dropdown-menu-right">
+    26:               <%= link_to '新規投稿','#',class: 'dropdown-item' %>
+    27:               <%= link_to 'マイページ',user_path,class: 'dropdown-item' %>
+    28:               <div class="dropdown-divider"></div>
+    29:                 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+    30:               </div>
+  
+app/views/shared/_header.html.erb:27:in `_app_views_shared__header_html_erb___3594863445771435507_70155054581480'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___2151567856697338757_70154970067520'
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:47:37 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 306ms (Views: 302.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:48:51 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 317ms (Views: 312.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:52:03 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 247ms (Views: 241.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:52:15 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.6ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 254ms (Views: 250.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:52:19 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (16.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.3ms)
+Completed 200 OK in 314ms (Views: 294.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:52:22 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (14.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 303ms (Views: 285.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2020-07-11 02:53:11 +0000
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost/rails/info/routes
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-07-11 02:53:11 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (4.7ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:53:25 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (20.7ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (87.1ms)
+Completed 500 Internal Server Error in 526ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<#<Class:0x00007f9c7d16abb8>:0x00007f9c7dd5f090>
+Did you mean?  resolve_asset):
+    24:             </button>
+    25:             <div class="dropdown-menu dropdown-menu-right">
+    26:               <%= link_to '新規投稿','#',class: 'dropdown-item' %>
+    27:               <%= link_to 'マイページ',edit_user_password_path(resource_name),class: 'dropdown-item' %>
+    28:               <div class="dropdown-divider"></div>
+    29:                 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+    30:               </div>
+  
+app/views/shared/_header.html.erb:27:in `_app_views_shared__header_html_erb___3594863445771435507_46998852041840'
+app/views/layouts/application.html.erb:13:in `_app_views_layouts_application_html_erb___2151567856697338757_70155051329360'
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:53:38 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (16.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (4.5ms)
+Completed 200 OK in 335ms (Views: 317.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/password/edit" for 127.0.0.1 at 2020-07-11 02:53:41 +0000
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:53:41 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 291ms (Views: 274.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/password/edit" for 127.0.0.1 at 2020-07-11 02:53:44 +0000
+Processing by Devise::PasswordsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:53:44 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.7ms)
+Completed 200 OK in 287ms (Views: 272.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/rails/info" for 127.0.0.1 at 2020-07-11 02:53:59 +0000
+Processing by Rails::InfoController#index as HTML
+Redirected to http://localhost/rails/info/routes
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/rails/info/routes" for 127.0.0.1 at 2020-07-11 02:53:59 +0000
+Processing by Rails::InfoController#routes as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application
+  Rendered collection of /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [21 times] (4.3ms)
+  Rendered /usr/local/bundle/gems/actionpack-5.2.4.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /usr/local/bundle/gems/railties-5.2.4.3/lib/rails/templates/rails/info/routes.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:54:15 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (12.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.9ms)
+Completed 200 OK in 249ms (Views: 235.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:54:17 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.2ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 283ms (Views: 278.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:57:10 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.0ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 324ms (Views: 317.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 02:57:30 +0000
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.3ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 288ms (Views: 284.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 02:57:32 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nCes/tq3iuvwzmbEqVfkSt0IlZVrXv5R561JZvQzjKOsGKnVQ4YJt+FgzHPh3kXcB8x8XdvAZydUDDolsPkdLg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 45ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 02:57:32 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (20.5ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 452ms (Views: 431.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:57:34 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (2.6ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 379ms (Views: 377.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:58:46 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.4ms)
+  Rendered shared/_header.html.erb (4.1ms)
+Completed 200 OK in 347ms (Views: 345.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 02:58:50 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjVILqKHbmwlBqMbOeKstGGn5BsBmgT4j3bYLvA6az7Lr64A2lepK/lIYJnr6IjGLtliDOTe3bHNfPMCHsDVVg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pjVILqKHbmwlBqMbOeKstGGn5BsBmgT4j3bYLvA6az7Lr64A2lepK/lIYJnr6IjGLtliDOTe3bHNfPMCHsDVVg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 534ms (Views: 305.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:00:44 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (12.0ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 261ms (Views: 247.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:06:46 +0000
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (15.0ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 331ms (Views: 315.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/homes/guest_sign_in" for 127.0.0.1 at 2020-07-11 03:06:51 +0000
+Processing by HomesController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"cSnGZyYHf5bXculzXATBy9BUNiriCMfK2ke1C7MyLB8csyBJXte40Qs8KvGODuW5nyqwPQdMHoOYTZ4nXciSdw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:7
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/homes_controller.rb:7
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'guest@example.com' LIMIT 1[0m
+  ↳ app/controllers/homes_controller.rb:7
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`) VALUES ('guest@example.com', '$2a$12$O1PpwTXAvCvpUA1ppvT0euGzeHVFR84/VXrwkNCrebrTOVj7b8aQK', '2020-07-11 03:06:51', '2020-07-11 03:06:51')[0m
+  ↳ app/controllers/homes_controller.rb:7
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/homes_controller.rb:7
+Redirected to http://localhost/
+Completed 302 Found in 252ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:06:51 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (12.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.7ms)
+Completed 200 OK in 315ms (Views: 301.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:10:47 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (13.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (15.9ms)
+Completed 200 OK in 263ms (Views: 247.5ms | ActiveRecord: 5.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 03:10:55 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"y5jEb9f9gbLsEBChJPe0PFxKKckVDmjjPTfz0lHRSa+mAiJBry1G9TBe0yP2/ZBOEzSv3vBKsap/Pdj+vyv3xw=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 9ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:10:55 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (13.8ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 286ms (Views: 274.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 03:10:57 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 299ms (Views: 296.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-11 03:11:02 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"zmVpyaWjNtzEWvgNYApLyfeaX2cTTu1jiWF9xOQU0Y2MM23OJN8fiTPv3O6UoZuM8gtvMViDXmzJVuBbRyJgRw=="}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `guest' for #<Class:0x00007f9c7e9b4160>):
+  
+app/controllers/users/sessions_controller.rb:4:in `new_guest'
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-11 03:11:46 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"zmVpyaWjNtzEWvgNYApLyfeaX2cTTu1jiWF9xOQU0Y2MM23OJN8fiTPv3O6UoZuM8gtvMViDXmzJVuBbRyJgRw=="}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `guest' for #<Class:0x00007f9c601d9b20>):
+  
+app/controllers/users/sessions_controller.rb:5:in `new_guest'
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-11 03:13:43 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"zmVpyaWjNtzEWvgNYApLyfeaX2cTTu1jiWF9xOQU0Y2MM23OJN8fiTPv3O6UoZuM8gtvMViDXmzJVuBbRyJgRw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:8
+Redirected to http://localhost/
+Completed 302 Found in 13ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:13:43 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (15.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.3ms)
+Completed 200 OK in 314ms (Views: 299.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 03:59:27 +0000
+  [1m[35m (3.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"64Vwn2PNpRz565gXZ8cvEx3sZgAvCKdi8RPCXituJlWp03SY4rGMSQ5evPSTbP9WGH1WVmTFFG2xJF/BiFiXnw=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 525ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:59:27 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (12.0ms)
+  Rendered shared/_header.html.erb (3.7ms)
+Completed 200 OK in 1132ms (Views: 1114.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-11 03:59:33 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"34eNdjXJTXjs9Vh8HvaSIqRHLkXg+vlxpldH6pUH6qsPDb/I04YaeZd/69oTy0PslOkc3uwS/QX15rDM7t7DAw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:8
+Redirected to http://localhost/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 03:59:33 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (12.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.7ms)
+Completed 200 OK in 249ms (Views: 233.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:06:43 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (17.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (20.5ms)
+Completed 200 OK in 433ms (Views: 409.0ms | ActiveRecord: 7.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 04:06:53 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rrS+wUl63H2hG1rGgSrglFExrEo1yS3OBHyxlJw6+p5+Pox/rzWLfNqR6WCMFzFaYZ+e0TkhKbpXzUay5+PTNg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 9ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:06:53 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (16.4ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 320ms (Views: 305.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-11 04:06:57 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"NGR9wgsjDO5uZ6OJJKQfcdjGt3sbMIWlLJN0ZynWy4ZjDqoGRLA3BsLQY5dAjf8uPzGaC8sbrn1lyMCENJsnVQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:8
+Redirected to http://localhost/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:06:58 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.9ms)
+  Rendered homes/index.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 354ms (Views: 341.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 04:07:04 +0000
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (16.7ms)
+  Rendered shared/_header.html.erb (0.8ms)
+Completed 200 OK in 320ms (Views: 316.3ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2020-07-11 04:07:07 +0000
+Processing by Users::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"jrMFoywIfRR2ihu5OYpaR+jM2JHZ/23+YeT+3+EgnCPZ2dJnY5tG/No926ddo7oYDzv14QnURiYov0o8/G1w8A=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :check_guest rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:07:07 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (10.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.8ms)
+Completed 200 OK in 234ms (Views: 222.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 04:07:14 +0000
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.9ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 195ms (Views: 192.5ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-11 04:07:16 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6rJLgAA3jqrv9MNs4oMuOHn4eOqmXylWayeL7/DlBhq92JxET6S1QkNDA3KGqs5nng9VmnZ0Ao4ifD8M7ajqyQ=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:07:16 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (14.7ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 269ms (Views: 253.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-11 04:07:18 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (17.6ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 328ms (Views: 298.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-11 04:07:23 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KnE21AdtAzgRZA9LX1coUfFybcLj0L9aSB2IOuL5RXS0lE2qjTZ1kJxxBvses2oCpg4cuGKyGzFDgj0O5mLREA==", "user"=>{"email"=>"daiki@example.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'daiki@example.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 246ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:07:24 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (10.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 230ms (Views: 219.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-11 04:07:28 +0000
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.7ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 287ms (Views: 283.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2020-07-11 04:07:30 +0000
+Processing by Users::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Uq6w0M0eGAKCFEfe6OK9l3Aa1UGuKgpGmpPrw8LJmBxAetfdwh4XFa3Dxr6yfKe/V1PvF0c4yNcyh9KLev2WHA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 10ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:07:30 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (12.2ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 248ms (Views: 236.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-11 04:09:13 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (11.6ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 316ms (Views: 305.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-11 04:09:19 +0000
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (19.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 261ms (Views: 250.2ms | ActiveRecord: 4.1ms)
+
+
