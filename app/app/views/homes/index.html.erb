@@ -1,2 +1,24 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'homes' %>
+<% end %>
+
+
 <%= render 'shared/flash_messages'%>
-<h1>トップページ</h1>
+<div class="center back-image">
+    <div class="text-center">
+      <h1 class="title">SONAERU</h1>
+      <p class="subtitle">〜いつ起こるかわからない非常事態に備えよう〜</p>
+      <br><br>
+      <div class="button-top">
+        <%= link_to  new_user_session_path,id: 'login-button', class: 'arrow_btn' do %>
+        ログイン
+        <span><i class="fas fa-arrow-alt-circle-right"></i></span>
+        <% end %><br>
+        
+        <%= link_to  new_user_registration_path, class: 'arrow_btn button-margin-top' do %>
+        アカウント登録
+        <span><i class="fas fa-arrow-alt-circle-right"></i></span>
+        <% end %>
+      </div>
+    </div>
+  </div>

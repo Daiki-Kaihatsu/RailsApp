@@ -47,8 +47,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
   <<: *default
-  database: app_production
+  database: <%= ENV['DB_DATABASE'] %>
+  adapter: mysql2
+  encoding: utf8
+  charset: utf8
+  collation: utf_general_ci
+  host: <%= ENV['DB_HOST'] %>
   username: app
   password: <%= ENV['APP_DATABASE_PASSWORD'] %>
