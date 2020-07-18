@@ -18,14 +18,14 @@
       </ul>
       <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <small class='nav-link text-light'> 現在 <%= current_user.name %> さんがログインしています </small> 
+          <small class='nav-link text-light'>  <%= current_user.name %></small> 
           <div class="btn-group">
             <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-align-justify"></i>
             </button>
             <div class="dropdown-menu dropdown-menu-right">
               <%= link_to '新規投稿','#',class: 'dropdown-item' %>
-              <%= link_to 'マイページ',edit_user_registration_path,class: 'dropdown-item' %>
+              <%= link_to 'マイページ',current_user,class: 'dropdown-item' %>
               <div class="dropdown-divider"></div>
                 <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
               </div>

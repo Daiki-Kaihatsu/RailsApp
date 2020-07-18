@@ -32,3 +32,5 @@
 .DS_Store
 /vendor/bundle
 /.idea
+
+awsscli-bundle.zip

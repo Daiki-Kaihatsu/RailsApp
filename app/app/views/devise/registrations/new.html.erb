@@ -1,50 +1,62 @@
-<div class="container bg-color">
-  <div class="row">
-    <div class="col-md-10 registration_margin">      
-      <div class="registration_form">
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-          <h1 class="registration"><%= t('.sign_up') %></h1>
-          <%= bootstrap_devise_error_messages! %>
+<div class="back-image">
+<  <div class="container">
+    <div class="row">
+      <div class="col-md-10 registration_margin">      
+        <div class="registration_form bg-color">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <h1 class="registration"><%= t('.sign_up') %></h1>
+            <%= bootstrap_devise_error_messages! %>
 
-          <%#= f.label :background_image %>
-          <%# <div id="cover-bg-image" class="img-profile bg-relative"> %>
-            <%#= image_tag 'none_image.png',class:'bg-image'%>
-            <%# <i class="fa fa-camera"></i>
-          </div> %>
-          <%#= f.attachment_field :background_image, autofocus: true, autocomplete: 'background_image'%>
-          
-          <%#= f.label :profile_image %>
-          <%# <div id="cover-profile-image" class="img-profile profile-relative"> %>
-            <%#= image_tag 'noimage.png',class:'profile-image'%>
-          <%# </div> %>
+            <%# <div id="cover-bg-image" class="img-profile bg-relative"> %>
+            <%#= f.label :background_image %>
+              <%#= image_tag 'none_image.png',class:'bg-image'%>
+              <%# <i class="fa fa-camera"></i>
+            </div> %>
+            <%#= f.attachment_field :background_image, autofocus: true, autocomplete: 'background_image'%>
+            
+            <%#= f.label :profile_image %>
+            <%# <div id="cover-profile-image" class="img-profile profile-relative"> %>
+              <%#= image_tag 'noimage.png',class:'profile-image'%>
+            <%# </div> %>
 
-          <%#= f.attachment_field :profile_image, autofocus: true, autocomplete: 'profile_image'%>
-
-            <%= f.label :name %>
-            <%= f.text_field :name, autofocus: true, autocomplete: 'name',:placeholder => "name" %>
-            <%= f.label :email %>
-            <%= f.email_field :email, autofocus: true, autocomplete: 'email',:placeholder => "email"%>
-            <%= f.label :password %>
-            <%= f.password_field :password, autocomplete: 'current-password',:placeholder => "password",
-                required: true,
-                minlength: @minimum_password_length,
-                maxlength: '30'
-            %>
-            <% if @minimum_password_length %>
-              <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
-            <% end %>
-            <%= f.label :password_confirmation %>
-            <%= f.password_field :password_confirmation, autocomplete: 'current-password',:placeholder => "passwordconfirmation",
-                required: true,
-                minlength: @minimum_password_length,
-                maxlength: '30' %>
-                <%# <div class="text-profile"> %>
-                  <%#= f.label :profile %>
-                  <%#= f.text_area :profile, autofocus: true,class:'form-control', autocomplete: 'profile',rows:3 %>
-                <%# </div> %>
-            <%= f.submit t('.sign_up'),class:'button'%>
-        <% end %>
-        <%= render 'devise/shared/links' %>
+            <%#= f.attachment_field :profile_image, autofocus: true, autocomplete: 'profile_image'%>
+            <div class="form-size">
+              <%= f.label :name %>
+              <%= f.text_field :name, autofocus: true, autocomplete: 'name',class:'form-boarder',:placeholder => "name" %>
+            </div>
+            <div class="form-size">
+              <%= f.label :email %>
+              <%= f.email_field :email, autofocus: true, autocomplete: 'email',class:'form-boarder',:placeholder => "email"%>
+            </div>
+            <div class="form-size">
+              <%= f.label :password %>
+              <%= f.password_field :password, autocomplete: 'current-password',:placeholder => "password",
+                  class:'form-boarder',
+                  required: true,
+                  minlength: @minimum_password_length,
+                  maxlength: '30'
+              %>
+              <% if @minimum_password_length %>
+                <small class="form-text text-muted"><%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %></small>
+              <% end %>
+            </div>
+            <div class="form-size">
+              <%= f.label :password_confirmation %>
+              <%= f.password_field :password_confirmation, autocomplete: 'current-password',:placeholder => "passwordconfirmation",
+                  class:'form-boarder',
+                  required: true,
+                  minlength: @minimum_password_length,
+                  maxlength: '30' %>
+                  <%# <div class="text-profile"> %>
+                    <%#= f.label :profile %>
+                    <%#= f.text_area :profile, autofocus: true,class:'form-control', autocomplete: 'profile',rows:3 %>
+                  <%# </div> %>
+            </div>
+            <div class="form-size">
+              <%= f.submit t('.sign_up'),class:'button'%>
+            </div>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>

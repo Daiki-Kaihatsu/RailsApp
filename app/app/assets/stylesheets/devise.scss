@@ -1,15 +1,25 @@
 .bg-color{
   background-color: rgba(255,255,255,0.7);
+  border-radius: 50px;
+  padding:50px;
 }
 .bg-login-color{
-  background-color: rgba(216, 215, 215, 0.5);
-  border-radius: 8px;
-  width: 750px;
+  background-color: rgba(255, 255, 255, 0.747);
+  border-radius: 50px;
+  padding:50px;
 }
 
 //新規登録フォーム
 // 背景画像
-#cover-bg-image{
+
+.login-back-image{
+  background-image:url(top-image.jpg);
+  background-repeat:  no-repeat; 
+  background-size:  cover; 
+  height: 915px;
+  }
+
+.cover-bg-image{
   cursor:pointer;
 }
 
@@ -83,8 +93,7 @@
 .registration {
   text-align: center;
   font-size: 1.4em;
-  font-weight: 700;
-  color: #ccc;
+  color: rgb(39, 35, 35);
   margin-bottom: 24px;
 }
 
@@ -93,7 +102,7 @@
   width: 100%;
   padding: 20px;
   margin-top: 30px;
-  border-radius: 6px;
+  border-radius: 50px;
   border: 0;
   background: #f26964;
   font-size: 1.2em;
@@ -133,11 +142,12 @@ input {
   border: 1px solid #eee;
 }
 
-// 投稿フォームを丸くする
-.form-boarder-radius{
-  border-radius: 20px;
+// 投稿フォーム
+.form-boarder{
+  border-radius: 33px;
 }
 
-.rogin-top{
-  margin-top: 180px;
+.form-size{
+  width: 500px;
+  margin:0 auto;
 }
