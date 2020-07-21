@@ -1,5 +1,5 @@
 <% content_for :css do %>
-  <%= stylesheet_link_tag 'homes' %>
+  <%= stylesheet_link_tag 'session' %>
 <% end %>
 
 <div class="login-back-image">
@@ -11,11 +11,11 @@
           <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <h2 class="text-center"><%= t('.sign_in') %></h2><br>
           <%= f.label :name %>
-          <%= f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-control form-boarder-radius' %>
+          <%= f.text_field :name, autofocus: true, autocomplete: 'name', class: 'form-boarder' %>
           <br>
           <%= f.label :password %>
           <%= f.password_field :password, autocomplete: 'current-password',
-                class: 'form-control form-boarder-radius',
+                class: 'form-boarder',
                 required: true,
                 minlength: @minimum_password_length,
                 maxlength: '30' %>

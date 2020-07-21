@@ -46,3 +46,7 @@ gem 'devise-bootstrap-views', '~> 1.0'
 
 # フォントawesome
 gem 'font-awesome-rails'
+
+#画像
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"

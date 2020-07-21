@@ -1,2 +1,36 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'users' %>
+<% end %>
+
+<%= render 'shared/flash_messages'%>
+  
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">      
+      <div class="registration_form">
+        <%= attachment_image_tag @user,:profile_bg, fallback:"none_image.png",class:'img-responsive bg-image-show'%>
+        <div class="flex">
+          <div class="display-flex">
+            <%= attachment_image_tag @user,:profile_image, fallback:"noimage.png",class:'img-responsive profile-image-show'%>
+            <% if @user.id == current_user.id %>
+              <div class="text-right">
+                <%= link_to '編集', edit_user_registration_path,class:'btn-circle-border-simple',style:'text-decoration: none;' %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <br>
+        <div class="center-show">
+          <h3 class="profile"><%= @user.name%></h3>
+          <% if @user.id == current_user.id %>
+            <p class="profile"><%= @user.email %></p>
+          <% end %>
+          <p class="profile">0フォロー &ensp;  &ensp;  &ensp; 0フォロワー</p>
+          <p class="profile-show"><%=simple_format @user.profile%></p>
+          <br><br>
+          <h2><%= @user.name %>さんが投稿した記事一覧</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

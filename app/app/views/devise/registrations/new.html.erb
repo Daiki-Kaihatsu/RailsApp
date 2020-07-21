@@ -1,25 +1,29 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'registration' %>
+<% end %>
 <div class="back-image">
-<  <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-md-10 registration_margin">      
-        <div class="registration_form bg-color">
+        <div class=" bg-color">
           <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
             <h1 class="registration"><%= t('.sign_up') %></h1>
             <%= bootstrap_devise_error_messages! %>
 
-            <%# <div id="cover-bg-image" class="img-profile bg-relative"> %>
-            <%#= f.label :background_image %>
-              <%#= image_tag 'none_image.png',class:'bg-image'%>
-              <%# <i class="fa fa-camera"></i>
-            </div> %>
-            <%#= f.attachment_field :background_image, autofocus: true, autocomplete: 'background_image'%>
-            
-            <%#= f.label :profile_image %>
-            <%# <div id="cover-profile-image" class="img-profile profile-relative"> %>
-              <%#= image_tag 'noimage.png',class:'profile-image'%>
-            <%# </div> %>
 
-            <%#= f.attachment_field :profile_image, autofocus: true, autocomplete: 'profile_image'%>
+            <div id="cover-bg-image" class="img-profile bg-relative"> 
+              <%= image_tag 'none_image.png',class:'bg-image'%>
+              <i class="fa fa-camera"></i>
+            </div> 
+            <%= f.attachment_field :profile_bg%>
+            
+            <div id="cover-profile-image" class="img-profile profile-relative">
+              <%= image_tag 'noimage.png',class:'profile-image'%>
+            </div>
+
+            <%= f.attachment_field :profile_image, autofocus: true, autocomplete: 'profile_image'%>
+            
+
             <div class="form-size">
               <%= f.label :name %>
               <%= f.text_field :name, autofocus: true, autocomplete: 'name',class:'form-boarder',:placeholder => "name" %>
@@ -47,10 +51,9 @@
                   required: true,
                   minlength: @minimum_password_length,
                   maxlength: '30' %>
-                  <%# <div class="text-profile"> %>
-                    <%#= f.label :profile %>
-                    <%#= f.text_area :profile, autofocus: true,class:'form-control', autocomplete: 'profile',rows:3 %>
-                  <%# </div> %>
+            <div class="text-profile">
+              <%= f.label :profile %>
+              <%= f.text_area :profile, autofocus: true,class:'form-control', autocomplete: 'profile',rows:3 %>
             </div>
             <div class="form-size">
               <%= f.submit t('.sign_up'),class:'button'%>

@@ -1,41 +1,52 @@
-<div class="container-login">
-  <h1><%= t('.title', resource: resource_name.to_s.humanize) %></h1>
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'registration' %>
+<% end %>
+<div class="back-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 registration_margin">      
+        <div class="bg-color">
+          <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+            <h1 class="registration">ユーザー編集</h1>
+            <%= bootstrap_devise_error_messages! %>
 
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-    <%= bootstrap_devise_error_messages! %>
+            <div id="cover-bg-image" class="img-profile bg-relative">
+              <% if @user.profile_bg_id.present? %>
+                <%= image_tag attachment_url(@user, :profile_bg),class:'bg-image' %>
+              <% else %>
+                <%= image_tag 'none_image.png',class:'bg-image'%>
+              <% end %>
+              <i class="fa fa-camera"></i>
+            </div>
+            <%= f.attachment_field :profile_bg, autofocus: true, autocomplete: 'profile_bg'%>
+            <div id="cover-profile-image" class="img-profile profile-relative">
+              <% if @user.profile_image_id.present? %>
+                <%= image_tag attachment_url(@user, :profile_image),class:'profile-image' %>
+              <% else %>
+                <%= image_tag 'noimage.png',class:'profile-image'%>
+              <% end %>
+            </div>
+            <%= f.attachment_field :profile_image, autofocus: true, autocomplete: 'profile_image'%>
 
-    <div class="form-group">
-      <%= f.label :email %>
-      <%= f.email_field :email, autofocus: true, autocomplete: 'email', class: 'form-control' %>
+            <div class="form-size">
+              <%= f.label :name %>
+              <%= f.text_field :name, autofocus: true, autocomplete: 'name',:placeholder => "name" %>
+            </div>
+            <div class="form-size">
+              <%= f.label :email %>
+              <%= f.email_field :email, autofocus: true, autocomplete: 'email',:placeholder => "email"%>
+            </div>
+            <div class="text-profile">
+              <%= f.label :profile %>
+              <%= f.text_area :profile, autofocus: true,class:'form-control', autocomplete: 'profile',rows:3 %>
+            </div>
+            <div class="form-size">
+              <%= f.submit '更新する',class:'button'%>
+            </div>
+          <% end %>
+        </div>
+      </div>
     </div>
-
-    <div class="form-group">
-      <%= f.label :password %>
-      <%= f.password_field :password, autocomplete: 'new-password', class: 'form-control' %>
-
-      <small class="form-text text-muted"><%= t('.leave_blank_if_you_don_t_want_to_change_it') %></small>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, autocomplete: 'new-password', class: 'form-control'  %>
-    </div>
-
-    <div class="form-group">
-      <%= f.label :current_password %>
-      <%= f.password_field :current_password, autocomplete: 'current-password', class: 'form-control' %>
-
-      <small class="form-text text-muted"><%= t('.we_need_your_current_password_to_confirm_your_changes') %></small>
-    </div>
-
-    <div class="form-group">
-      <%= f.submit t('.update'), class: 'btn btn-primary btn-block' %>
-    </div>
-  <% end %>
-
-    <hr class="devise-link my-5">
-    <div class="form-group">
-      <%= link_to "トップページ", root_path, class: 'btn btn-info btn-block mb-4'%>
-      <%= link_to t('.cancel_my_account'),registration_path(resource_name), data: { confirm: t('.are_you_sure') }, method: :delete,class: 'btn btn-danger btn-block mb-4'%>
-    <div>
+    <p><%= link_to t('.cancel_my_account'), registration_path(resource_name), data: { confirm: t('.are_you_sure') }, method: :delete %>.</p>
+  </div>
 </div>

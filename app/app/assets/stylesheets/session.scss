@@ -1,8 +1,4 @@
-.bg-color{
-  background-color: rgba(255,255,255,0.7);
-  border-radius: 50px;
-  padding:50px;
-}
+
 .bg-login-color{
   background-color: rgba(255, 255, 255, 0.747);
   border-radius: 50px;
@@ -19,82 +15,26 @@
   height: 915px;
   }
 
-.cover-bg-image{
-  cursor:pointer;
-}
+
 
 .img-profile{
   text-align:center;
 }
 
-.bg-image{
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
 
 
-.bg-relative{
-  position: relative;
-  i{
-    position: absolute;
-    top: 48%;
-    left: 48%;
-    color: whitesmoke;
-    font-size: 25px;
-  }
-}
-#user_background_image{
-  display: none;
-}
 
 // プロフィール画像
 
 
-#cover-profile-image{
-  cursor:pointer;
-}
-.profile-image{
-  margin-top: -60px;
-  border-radius: 50%;
-  width: 160px;
-  height: 200px;
-  object-fit: cover;
-}
 
-.profile-relative{
-  position: relative;
-  i{
-    position: absolute;
-    top: 28%;
-    left: 48%;
-    color: whitesmoke;
-    font-size: 25px;
-  }
-}
-#user_profile_image{
-  display: none;
-}
+
+
 
 
 
 .text-profile{
   margin-bottom: 10px;
-}
-
-
-.registration_margin {
-  border-radius: 6px;
-  padding: 20px;
-  padding-top: 30px;
-  margin: 50px auto;
-}
-
-.registration {
-  text-align: center;
-  font-size: 1.4em;
-  color: rgb(39, 35, 35);
-  margin-bottom: 24px;
 }
 
 .button{
@@ -142,12 +82,3 @@ input {
   border: 1px solid #eee;
 }
 
-// 投稿フォーム
-.form-boarder{
-  border-radius: 33px;
-}
-
-.form-size{
-  width: 500px;
-  margin:0 auto;
-}

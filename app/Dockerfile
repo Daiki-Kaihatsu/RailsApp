@@ -4,6 +4,8 @@ FROM ruby:2.5.3
 RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
         && apt-get install -y nodejs 
 
+
+
 ##作業ディレクトリ名をAPP_ROOTに割り当てて、以下$APP_ROOTで参照
 ENV APP_ROOT /app
 WORKDIR $APP_ROOT
