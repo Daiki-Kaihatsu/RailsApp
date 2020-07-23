@@ -1,0 +1,33 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'users' %>
+<% end %>
+
+
+
+
+<h1 class="text-center">フォロー一覧</h1>
+<hr>
+<% @users.each do |user|%>
+  <div class="user-index-flex">
+    <% if user.profile_image.present? %>
+      <%= link_to user_path(user) do%>
+        <%= attachment_image_tag user,:profile_image,class:'profileImage-index'%>
+      <% end %>
+    <%else%>
+    <%= link_to user_path(user) do%>
+      <%= image_tag 'noimage.png' ,class:'profileImage-index ' %>
+    <% end %>
+    <% end %>
+    <div class="block">
+      <%= link_to user_path(user) do%>
+        <div class="name-color"><%=user.name%></div>
+      <% end %>
+      <small class="email-color"><%=user.email%></small><br>
+      <%=user.profile%>
+      <div class="follow"><br>
+        <%= render 'relationships/follow_button', user: user%> 
+      </div>
+    </div>
+  </div>
+  <hr>
+<% end %>

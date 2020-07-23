@@ -1,3 +1,8 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'users' %>
+<% end %>
+
+
 <h1 class="text-center">ユーザー一覧</h1>
 <hr>
 <% @users.each do |user|%>
@@ -11,13 +16,15 @@
       <%= image_tag 'noimage.png' ,class:'profileImage-index ' %>
     <% end %>
     <% end %>
-    <div class="index-name">
+    <div class="block">
       <%= link_to user_path(user) do%>
-        <%=user.name%><br>
+        <div class="name-color"><%=user.name%></div>
       <% end %>
-      <small class="email-color"><%=user.email%></small> <br><br>
+      <small class="email-color"><%=user.email%></small><br>
       <%=user.profile%>
-      <p>[フォローする]</p>
+      <div class="follow"><br>
+        <%= render 'relationships/follow_button', user: user%> 
+      </div>
     </div>
   </div>
   <hr>

@@ -65,8 +65,8 @@
   display: flex;
 }
 
-.index-name{
-  // padding-top:50px;
+.name-color{
+  color: lightslategray;
 }
 
 .email-color{
@@ -74,5 +74,28 @@
 }
 
 .col-md-12{
-  padding:0;
+  padding:0px;
+}
+
+// フォロー機能
+.follow-delete-btn{
+  width: 150px;
+  height: 47px;
+  border-radius: 30px;
+  line-height: 0px;
+  color: white;
+  background-color: #4169E1;
+  outline: none;
+}
+
+.follow-btn{
+  width: 150px;
+  height: 47px;
+  border-radius: 30px;
+  line-height: 0px;
+  background-color: white;
+  border-color: #4169E1;
+  color: #4169E1;
+  border-width: 2px;
+  outline: none;
 }

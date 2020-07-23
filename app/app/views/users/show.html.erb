@@ -21,11 +21,23 @@
         </div>
         <br>
         <div class="center-show">
-          <h3 class="profile"><%= @user.name%></h3>
+          <h3 class="profile">
+            <%= @user.name%>
+          </h3>
           <% if @user.id == current_user.id %>
-            <p class="profile"><%= @user.email %></p>
+            <p class="profile">
+              <%= @user.email %>
+            </p>
           <% end %>
-          <p class="profile">0フォロー &ensp;  &ensp;  &ensp; 0フォロワー</p>
+          <p class="profile">
+            <%= link_to following_user_path(@user) do%>
+              フォロー<%= @user.followings.count%> 
+            <% end %>
+              &ensp;  &ensp;  &ensp; 
+            <%= link_to followers_user_path(@user) do%>
+              フォロワー<%= @user.followers.count%>
+            <% end %>
+          </p>
           <p class="profile-show"><%=simple_format @user.profile%></p>
           <br><br>
           <h2><%= @user.name %>さんが投稿した記事一覧</h2>
