@@ -18,30 +18,21 @@
       </ul>
       <ul class="navbar-nav">
         <% if user_signed_in? %>
-          <small class='nav-link text-light'>  <%= current_user.name %></small> 
-          <div class="btn-group">
-            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-align-justify"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <%= link_to '新規投稿','#',class: 'dropdown-item' %>
-              <%= link_to 'マイページ',current_user,class: 'dropdown-item' %>
-              <div class="dropdown-divider"></div>
-                <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
-              </div>
+            <li class="nav-item ">
+              <%= link_to '新規投稿','#',class: 'nav-link text-light' %>
+            </li>
+            <li class="nav-item ">
+              <%= link_to 'マイページ',current_user,class: 'nav-link text-light' %>
+            </li>
+              <li class="nav-item ">
+                <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: 'nav-link text-light' %>
+              </li>
             </div>
           </div>
         <% else %>
-          <div class="btn-group">
-            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-align-justify"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-right">
-              <%= link_to "新規登録", new_user_registration_path,class:"dropdown-item" %>
-              <%= link_to "ログイン", new_user_session_path, class:"dropdown-item" %>
-              <%= link_to "ゲストログイン(閲覧用)", users_guest_sign_in_path,method: :post, class:"dropdown-item" %>
-            </div>
-          </div>
+          <li class="nav-item ">
+            <%= link_to "ゲストログイン(閲覧用)", users_guest_sign_in_path,method: :post, class:"nav-link text-light" %>
+          </li>
         <% end %>
       </ul>
     </div>

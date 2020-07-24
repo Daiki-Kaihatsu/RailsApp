@@ -4,6 +4,11 @@ class User < ApplicationRecord
     devise :database_authenticatable, :registerable,
           :recoverable, :rememberable, :validatable
 
+    # 空白NG
+    validates :name, presence: true
+    validates :email, presence: true
+
+
         # 画像のattach
         attachment :profile_bg
         attachment :profile_image

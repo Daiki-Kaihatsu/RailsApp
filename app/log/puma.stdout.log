@@ -169,3 +169,235 @@
 === puma shutdown: 2020-07-23 09:30:10 +0000 ===
 - Goodbye!
 === puma startup: 2020-07-23 09:30:17 +0000 ===
+=== puma startup: 2020-07-23 10:39:31 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 10:40:10 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 10:40:19 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 10:40:29 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 10:40:36 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:12:36 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:15:49 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[7] pry(#<UsersController>)> 
+[8] pry(#<UsersController>)> 
+[9] pry(#<UsersController>)> 
+[10] pry(#<UsersController>)> 
+[11] pry(#<UsersController>)> 
+[12] pry(#<UsersController>)> 
+[13] pry(#<UsersController>)> 
+[14] pry(#<UsersController>)> 
+[15] pry(#<UsersController>)> 
+[16] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:21:03 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:5 UsersController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @users = [1;34;4mUser[0m.order([35mcreated_at[0m: [33m:desc[0m)
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[7] pry(#<UsersController>)> 
+[8] pry(#<UsersController>)> 
+[9] pry(#<UsersController>)> 
+[10] pry(#<UsersController>)> 
+[11] pry(#<UsersController>)> 
+[12] pry(#<UsersController>)> 
+[13] pry(#<UsersController>)> 
+[14] pry(#<UsersController>)> 
+[15] pry(#<UsersController>)> 
+[16] pry(#<UsersController>)> 
+[17] pry(#<UsersController>)> 
+[18] pry(#<UsersController>)> 
+[19] pry(#<UsersController>)> 
+[20] pry(#<UsersController>)> 
+[21] pry(#<UsersController>)> 
+[22] pry(#<UsersController>)> 
+[23] pry(#<UsersController>)> 
+[24] pry(#<UsersController>)> ll
+NameError: undefined local variable or method `ll' for #<UsersController:0x00007f3e4035f658>
+Did you mean?  l
+from (pry):1:in `index'
+[25] pry(#<UsersController>)> 
+[26] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:5 UsersController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @users = [1;34;4mUser[0m.order([35mcreated_at[0m: [33m:desc[0m)
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[K[26] pry(#<UsersController>)> [1] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:5 UsersController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @users = [1;34;4mUser[0m.order([35mcreated_at[0m: [33m:desc[0m)
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[7] pry(#<UsersController>)> 
+[8] pry(#<UsersController>)> 
+[9] pry(#<UsersController>)> 
+[10] pry(#<UsersController>)> 
+[1mFrom:[0m /app/app/controllers/users_controller.rb:5 UsersController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @users = [1;34;4mUser[0m.order([35mcreated_at[0m: [33m:desc[0m)
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:30:52 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:5 UsersController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @users = [1;34;4mUser[0m.order([35mcreated_at[0m: [33m:desc[0m)
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:31:59 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[7] pry(#<UsersController>)> 
+[8] pry(#<UsersController>)> 
+[9] pry(#<UsersController>)> 
+[10] pry(#<UsersController>)> 
+[11] pry(#<UsersController>)> 
+[12] pry(#<UsersController>)> 
+[13] pry(#<UsersController>)> 
+[14] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:38:36 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/users_controller.rb:9 UsersController#show:
+
+    [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+    [1;34m7[0m:   @user = [1;34;4mUser[0m.find(params[[33m:id[0m])
+    [1;34m8[0m:   binding.pry
+ => [1;34m9[0m: [32mend[0m
+
+[0G[1] pry(#<UsersController>)> 
+[2] pry(#<UsersController>)> 
+[3] pry(#<UsersController>)> 
+[4] pry(#<UsersController>)> 
+[5] pry(#<UsersController>)> 
+[6] pry(#<UsersController>)> 
+[7] pry(#<UsersController>)> 
+[8] pry(#<UsersController>)> 
+[9] pry(#<UsersController>)> 
+[10] pry(#<UsersController>)> 
+[11] pry(#<UsersController>)> 
+[12] pry(#<UsersController>)> 
+[13] pry(#<UsersController>)> 
+[14] pry(#<UsersController>)> 
+[15] pry(#<UsersController>)> 
+[16] pry(#<UsersController>)> 
+[17] pry(#<UsersController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-23 12:40:43 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 12:57:09 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 12:57:17 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 16:23:07 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 16:23:18 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 16:32:15 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 16:32:28 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-23 16:33:12 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-23 16:33:20 +0000 ===

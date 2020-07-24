@@ -18244,3 +18244,1925 @@ Processing by HomesController#index as HTML
 Completed 200 OK in 381ms (Views: 360.8ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2020-07-23 10:40:39 +0000
+  [1m[35m (3.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (3404.1ms)
+  Rendered layouts/_meta.erb (419.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (22.5ms)
+Completed 200 OK in 3914ms (Views: 3891.1ms | ActiveRecord: 6.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 11:16:24 +0000
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Sp1vy9rz7AsB8dBT5YqaTTmHZdS0Ytn5zGnyPm4mx09qpiaai6AshknvHu8IVOU0U+KRBQoekDwFzxyujxYleg=="}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 484ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:16:25 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (38.3ms)
+  Rendered layouts/_meta.erb (292.6ms)
+  Rendered shared/_header.html.erb (4.5ms)
+Completed 200 OK in 406ms (Views: 392.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:17:51 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.3ms)
+  Rendered homes/index.html.erb within layouts/application (36.5ms)
+  Rendered layouts/_meta.erb (235.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 358ms (Views: 341.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:21:06 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (41.1ms)
+  Rendered layouts/_meta.erb (303.9ms)
+  Rendered shared/_header.html.erb (2.4ms)
+Completed 200 OK in 468ms (Views: 451.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:22:55 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (34.7ms)
+  Rendered layouts/_meta.erb (258.5ms)
+  Rendered shared/_header.html.erb (1.6ms)
+Completed 200 OK in 366ms (Views: 354.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 11:22:58 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"+bzICydy0VJWOOtZjElC9quGnXRuSfMgFkstdnHfTqVY9+zxpo7ZmasdJP8CS+ntwvVhzeVX+4yxLldC5Vc4iQ=="}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:12
+Redirected to http://localhost/
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:22:58 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (35.8ms)
+  Rendered layouts/_meta.erb (227.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.3ms)
+Completed 200 OK in 338ms (Views: 323.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:23:37 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (32.1ms)
+  Rendered layouts/_meta.erb (214.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.9ms)
+Completed 200 OK in 316ms (Views: 303.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 11:56:58 +0000
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 33ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:56:58 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (1.1ms)
+  Rendered homes/index.html.erb within layouts/application (61.1ms)
+  Rendered layouts/_meta.erb (339.5ms)
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (8.9ms)
+Completed 200 OK in 498ms (Views: 482.4ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 11:57:01 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"88hcF/1Jd4YukiqPONE4s7OS3ITfPbHJjlLIlTS+SxlSg3jtfLV/TdO35Sm205Oo2uEgPVQjuWUpN7KhoDY9NQ=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 19ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:57:01 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (39.4ms)
+  Rendered layouts/_meta.erb (331.6ms)
+  Rendered shared/_header.html.erb (3.0ms)
+Completed 200 OK in 461ms (Views: 444.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 11:57:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (102.4ms)
+  Rendered layouts/_meta.erb (375.1ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 560ms (Views: 556.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-23 11:57:37 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EDwYOt5US4hm0dw43+UEwSLrHnT0UhD2pHIvFEUO4csBMb2sUmXRdiSx0Pkgur1Ow98Acx0WmgNo3+2vQHZwUA==", "user"=>{"name"=>"細井大輝", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`name` = '細井大輝' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 308ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 11:57:37 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (31.7ms)
+  Rendered layouts/_meta.erb (212.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.8ms)
+Completed 200 OK in 303ms (Views: 292.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 12:05:30 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"L1liHF6Bx30rfyqc8tShlgGjPDJCf12dKd7BgCz2xjeBJ5pB51ALK2pAS55GRQYe5amFcQ9Nq1qakNMYgW9LBQ=="}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:05:30 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_meta.erb (251.1ms)
+  Rendered shared/_header.html.erb (4.0ms)
+Completed 200 OK in 386ms (Views: 364.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 12:07:01 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"Ydi59UsxYOqp1f3qQldAXp2zZs82N9NIvsgpQfbHeg0zfTnP04RLMyNtuJtVziyNDQzLVHfXcKbIv6ySIisOjQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:12
+Redirected to http://localhost/
+Completed 302 Found in 20ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:07:01 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+  Rendered homes/index.html.erb within layouts/application (43.1ms)
+  Rendered layouts/_meta.erb (330.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.7ms)
+Completed 200 OK in 460ms (Views: 445.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:07:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:07:52 +0000
+  [1m[35m (22.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:08:37 +0000
+  [1m[35m (1.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (6.9ms)
+  Rendered homes/index.html.erb within layouts/application (83.8ms)
+  Rendered layouts/_meta.erb (1162.4ms)
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (27.8ms)
+Completed 200 OK in 1386ms (Views: 1361.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:08:42 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:10:05 +0000
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:12:40 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1102.1ms)
+  Rendered layouts/_meta.erb (532.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (19.3ms)
+Completed 200 OK in 1745ms (Views: 1716.5ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:13:07 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (33.4ms)
+  Rendered layouts/_meta.erb (223.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (17.9ms)
+Completed 200 OK in 340ms (Views: 321.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:13:10 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:14:17 +0000
+  [1m[35m (1.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:14:38 +0000
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.0ms)
+  Rendered homes/index.html.erb within layouts/application (73.8ms)
+  Rendered layouts/_meta.erb (1028.5ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (25.3ms)
+Completed 200 OK in 1218ms (Views: 1196.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 12:14:42 +0000
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:15:51 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1179.1ms)
+  Rendered layouts/_meta.erb (588.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (20.7ms)
+Completed 200 OK in 1875ms (Views: 1846.8ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 12:15:55 +0000
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 516ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:15:56 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (36.1ms)
+  Rendered layouts/_meta.erb (248.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.2ms)
+Completed 200 OK in 364ms (Views: 349.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 12:15:59 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NzYgD+WuiwYUD+qLbrREiuYq/vVWq3VZv9qTh27PLs9lk6A1fRug3563r/p5LShZdpVTbhdL1rfJrRZUuiNaTw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 10ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:15:59 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_meta.erb (265.6ms)
+  Rendered shared/_header.html.erb (4.0ms)
+Completed 200 OK in 382ms (Views: 368.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 12:16:00 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (42.3ms)
+  Rendered layouts/_meta.erb (185.1ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 287ms (Views: 285.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 12:16:01 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"IF79InO3S8XkA82ARpNsfbSl8UAFnpYW4vue2Om/uWxHT37j552B3xjZnbiWSq2vEpspRozNq3sTHlXRS43I4Q=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:12
+Redirected to http://localhost/
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:16:01 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_meta.erb (208.9ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 302ms (Views: 290.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:16:03 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:15
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5[0m
+  ↳ app/views/users/show.html.erb:34
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`user_id` WHERE `relationships`.`follow_id` = 5[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (98.8ms)
+  Rendered layouts/_meta.erb (233.1ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 411ms (Views: 386.2ms | ActiveRecord: 7.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 12:16:05 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FvHdzR6yTQ8omAcu1mY1M1ED8XNgKBbTEC4mO32ds25x4F4MipiHFdRCVxYGv/Th9z0pdel7K77hy+0y36/C4w=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 7ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:16:05 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (37.1ms)
+  Rendered layouts/_meta.erb (248.2ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 358ms (Views: 345.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:16:59 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (30.8ms)
+  Rendered layouts/_meta.erb (226.3ms)
+  Rendered shared/_header.html.erb (1.7ms)
+Completed 200 OK in 318ms (Views: 305.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 12:17:03 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"YX3/+UyZGYaDRbRzp59CxBvVxCFPkzFuEQsbvBFCjX2Feq+/Izqqa9Z78TCXw4nl3GR1q5XTTaQNrHl+if3/vg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:12
+Redirected to http://localhost/
+Completed 302 Found in 16ms (ActiveRecord: 4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:17:03 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (38.2ms)
+  Rendered layouts/_meta.erb (245.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 365ms (Views: 351.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:17:04 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:18:37 +0000
+  [1m[35m (1.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.1ms)
+  Rendered homes/index.html.erb within layouts/application (80.6ms)
+  Rendered layouts/_meta.erb (1002.1ms)
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (26.8ms)
+Completed 200 OK in 1235ms (Views: 1206.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:18:42 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:21:08 +0000
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:21:09 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  [1m[36mUser Load (9.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (70.2ms)
+  Rendered layouts/_meta.erb (572.1ms)
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (14.2ms)
+Completed 200 OK in 785ms (Views: 756.9ms | ActiveRecord: 10.4ms)
+
+
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (738.0ms)
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (5.7ms)
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (7.6ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.8ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  Rendered relationships/_follow_button.html.erb (0.6ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  Rendered users/index.html.erb within layouts/application (2526.3ms)
+  Rendered layouts/_meta.erb (327.8ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 2981ms (Views: 2899.2ms | ActiveRecord: 46.6ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:21:13 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:15
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5[0m
+  ↳ app/views/users/show.html.erb:34
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`user_id` WHERE `relationships`.`follow_id` = 5[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (42.2ms)
+  Rendered layouts/_meta.erb (225.8ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 340ms (Views: 319.5ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 12:21:16 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"3A8N/pEsXOGfOiCHRoT/6/U8L+Vx2Im022JlbV9+0Es4CF24/o/vDMoEZcR22DTKMo2eb6uY9X7HxQevx8GiiA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 464ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:21:16 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_meta.erb (240.7ms)
+  Rendered shared/_header.html.erb (3.6ms)
+Completed 200 OK in 360ms (Views: 345.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:23:27 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (41.8ms)
+  Rendered layouts/_meta.erb (244.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 368ms (Views: 352.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:23:44 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (1.0ms)
+  Rendered homes/index.html.erb within layouts/application (47.9ms)
+  Rendered layouts/_meta.erb (361.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 510ms (Views: 491.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:23:47 +0000
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`created_at` DESC LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  `users`.* FROM `users` ORDER BY `users`.`created_at` DESC LIMIT 11[0m
+  ↳ /usr/local/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib/did_you_mean/core_ext/name_error.rb:4
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:29:21 +0000
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:29:36 +0000
+  [1m[35m (2.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.3ms)
+  Rendered homes/index.html.erb within layouts/application (84.0ms)
+  Rendered layouts/_meta.erb (1356.3ms)
+  Rendered shared/_header.html.erb (8.3ms)
+Completed 200 OK in 1560ms (Views: 1539.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:29:37 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.2ms)
+  Rendered homes/index.html.erb within layouts/application (81.4ms)
+  Rendered layouts/_meta.erb (1074.1ms)
+  Rendered shared/_header.html.erb (13.9ms)
+Completed 200 OK in 1291ms (Views: 1262.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:29:39 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.3ms)
+  Rendered homes/index.html.erb within layouts/application (89.8ms)
+  Rendered layouts/_meta.erb (1154.9ms)
+  Rendered shared/_header.html.erb (14.4ms)
+Completed 200 OK in 1367ms (Views: 1349.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:29:43 +0000
+Processing by UsersController#index as HTML
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:30:10 +0000
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.3ms)
+  Rendered homes/index.html.erb within layouts/application (107.7ms)
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:30:11 +0000
+  [1m[35m (5.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendered layouts/_meta.erb (1300.6ms)
+  Rendered shared/_header.html.erb (9.3ms)
+Completed 200 OK in 1548ms (Views: 1518.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:30:16 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (2.5ms)
+  Rendered homes/index.html.erb within layouts/application (90.5ms)
+  Rendered layouts/_meta.erb (1211.7ms)
+  Rendered shared/_header.html.erb (10.1ms)
+Completed 200 OK in 1431ms (Views: 1402.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 12:30:20 +0000
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:30:56 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1291.9ms)
+  Rendered layouts/_meta.erb (612.6ms)
+  Rendered shared/_header.html.erb (3.4ms)
+Completed 200 OK in 2004ms (Views: 1981.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:31:04 +0000
+Processing by UsersController#index as HTML
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:31:14 +0000
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:32:00 +0000
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1130.3ms)
+  Rendered layouts/_meta.erb (496.3ms)
+  Rendered shared/_header.html.erb (3.6ms)
+Completed 200 OK in 1713ms (Views: 1691.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:32:07 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered relationships/_follow_button.html.erb (13.3ms)
+  Rendered users/index.html.erb within layouts/application (61.7ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 8.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `following?' for nil:NilClass):
+    3: <% end %>
+    4: 
+    5: <% unless current_user == user %>
+    6:   <% if current_user.following?(user) %>
+    7:     <%= form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }) do |f| %>
+    8:       <%= hidden_field_tag :follow_id, user.id %>
+    9:       <%= f.submit 'フォロー解除' ,class:'follow-delete-btn'%>
+  
+app/views/relationships/_follow_button.html.erb:6:in `_app_views_relationships__follow_button_html_erb__4085708669038326971_69920893937060'
+app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb___2011560020851459373_69920893304460'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___2011560020851459373_69920893304460'
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:32:23 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (44.8ms)
+  Rendered layouts/_meta.erb (330.0ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 484ms (Views: 463.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-23 12:32:26 +0000
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (532.9ms)
+  Rendered layouts/_meta.erb (257.6ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 882ms (Views: 861.7ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 12:32:29 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"gIGwfGsasqsoc4NPDWGcG+kBv2rzx3hiHR+6mph0Vm1JJ8IWE7LEFQDibSCuaX7JyT71WCdSeZx0FistOW6UVA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:12
+Redirected to http://localhost/
+Completed 302 Found in 4ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:32:29 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (40.2ms)
+  Rendered layouts/_meta.erb (252.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 376ms (Views: 360.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:32:31 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (45.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.0ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.5ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.0ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (2.9ms)
+  Rendered relationships/_follow_button.html.erb (0.6ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  Rendered users/index.html.erb within layouts/application (261.0ms)
+  Rendered layouts/_meta.erb (245.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 580ms (Views: 554.5ms | ActiveRecord: 11.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:32:35 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (6.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.1ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.3ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.0ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.9ms)
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.0ms)
+  Rendered relationships/_follow_button.html.erb (0.8ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  Rendered users/index.html.erb within layouts/application (237.6ms)
+  Rendered layouts/_meta.erb (268.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 598ms (Views: 573.3ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 12:34:13 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (21.8ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (5.0ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.9ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  Rendered relationships/_follow_button.html.erb (0.8ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:38
+  Rendered relationships/_follow_button.html.erb (3.9ms)
+  Rendered users/index.html.erb within layouts/application (238.5ms)
+  Rendered layouts/_meta.erb (245.0ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 556ms (Views: 532.1ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:34:16 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started POST "/relationships" for 127.0.0.1 at 2020-07-23 12:34:42 +0000
+  [1m[35m (1.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:38:37 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1026.3ms)
+  Rendered layouts/_meta.erb (458.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (20.0ms)
+Completed 200 OK in 1589ms (Views: 1558.9ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:38:52 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:40:10 +0000
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:40:48 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1048.1ms)
+  Rendered layouts/_meta.erb (495.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (20.6ms)
+Completed 200 OK in 1663ms (Views: 1632.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/users/5" for 127.0.0.1 at 2020-07-23 12:40:52 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:15
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5[0m
+  ↳ app/views/users/show.html.erb:34
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`user_id` WHERE `relationships`.`follow_id` = 5[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (99.8ms)
+  Rendered layouts/_meta.erb (239.6ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 427ms (Views: 401.5ms | ActiveRecord: 6.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 12:41:01 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kthREko5oEHr/hAqXdkvhaIYtDFzZONf67m2FzYYbC5bfiN4MpHW/8Nv/kX+0c1Xgif+A6fx4qGCsCeglwKuFw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 625ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:41:01 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (43.4ms)
+  Rendered layouts/_meta.erb (271.4ms)
+  Rendered shared/_header.html.erb (4.2ms)
+Completed 200 OK in 402ms (Views: 387.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 12:41:02 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (54.3ms)
+  Rendered layouts/_meta.erb (246.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 379ms (Views: 377.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 12:59:53 +0000
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (1508.8ms)
+  Rendered layouts/_meta.erb (805.6ms)
+  Rendered shared/_header.html.erb (3.9ms)
+Completed 200 OK in 2423ms (Views: 2399.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-23 13:02:43 +0000
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (570.6ms)
+  Rendered layouts/_meta.erb (300.4ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 964ms (Views: 947.0ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 13:06:28 +0000
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C/DIJlh17AdKyJsbklbUL2pJ1qCLhGAP/cgrqKDZJQVwTMbw999z22BeP0NO/hu17nKI0Z1glm6dV6lQjMRM9A==", "user"=>{"profile_bg"=>"{}", "profile_image"=>"{}", "name"=>"honamin", "email"=>"test8@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "profile"=>""}, "commit"=>"新規登録"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'test8@example.com' LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `name`, `profile_image_id`, `profile_bg_id`) VALUES ('test8@example.com', '$2a$12$tJaSGmEaq6DrOOF1g2nBLewpeLpy3c1xgePMSCDSqOmaJuEKcQVMe', '2020-07-23 13:06:28', '2020-07-23 13:06:28', 'honamin', NULL, NULL)[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 272ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:06:28 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (41.6ms)
+  Rendered layouts/_meta.erb (278.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (4.6ms)
+Completed 200 OK in 409ms (Views: 393.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/15" for 127.0.0.1 at 2020-07-23 13:06:33 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:15
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 15[0m
+  ↳ app/views/users/show.html.erb:34
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`user_id` WHERE `relationships`.`follow_id` = 15[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (131.6ms)
+  Rendered layouts/_meta.erb (234.1ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 468ms (Views: 431.9ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-23 13:06:35 +0000
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (45.0ms)
+  Rendered layouts/_meta.erb (272.1ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 416ms (Views: 412.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2020-07-23 13:06:39 +0000
+Processing by Users::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8uUtjx+Hjc23bFn7Cm9iUd5I1nZrac7CXbYRs4mAJKHkQNsB4H4d1hZdoQcPjjebMdxLhDMhcAILhASImSCP1g=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 15 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 15[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 16ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:06:39 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_meta.erb (221.6ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 324ms (Views: 307.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-23 13:07:08 +0000
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (50.4ms)
+  Rendered layouts/_meta.erb (216.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 368ms (Views: 366.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 13:07:16 +0000
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aLds0JpuPA7UT7lRQf28y083ieEQnwm+mCZHXoe1u+9xxPyrk5ZFRCjt1EIR3c8iDCecJwWHBR8SoBJEIn8yZQ==", "user"=>{"profile_bg"=>"{}", "profile_image"=>"{}", "name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "profile"=>""}, "commit"=>"新規登録"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_meta.erb (222.4ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 559ms (Views: 314.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-07-23 13:07:28 +0000
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nqjc+4IMdSSGbSXNESB/O+T9jl1Xvx5o/Ifjd91nADTuNhc5IAcIF7KpfoningibSheV6z1eMFigfQpBs/eIxg==", "user"=>{"profile_bg"=>"{}", "profile_image"=>"{}", "name"=>"", "email"=>"fffewfewer@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "profile"=>""}, "commit"=>"新規登録"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` WHERE `users`.`email` = BINARY 'fffewfewer@example.com' LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO `users` (`email`, `encrypted_password`, `created_at`, `updated_at`, `profile_image_id`, `profile_bg_id`) VALUES ('fffewfewer@example.com', '$2a$12$aLQVsfNNv2wQDObDzrzr0e5IRDRfdYwwAHXieLfz..fuC3sq1KnpG', '2020-07-23 13:07:28', '2020-07-23 13:07:28', NULL, NULL)[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 252ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:07:28 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (34.5ms)
+  Rendered layouts/_meta.erb (244.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.8ms)
+Completed 200 OK in 339ms (Views: 327.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/16" for 127.0.0.1 at 2020-07-23 13:07:33 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 LIMIT 1[0m
+  ↳ app/controllers/users_controller.rb:7
+  Rendering users/show.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/users/show.html.erb:15
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 16[0m
+  ↳ app/views/users/show.html.erb:34
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`user_id` WHERE `relationships`.`follow_id` = 16[0m
+  ↳ app/views/users/show.html.erb:38
+  Rendered users/show.html.erb within layouts/application (59.3ms)
+  Rendered layouts/_meta.erb (211.7ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 361ms (Views: 335.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2020-07-23 13:07:35 +0000
+Processing by Users::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/registrations/edit.html.erb within layouts/application (42.6ms)
+  Rendered layouts/_meta.erb (251.0ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 376ms (Views: 371.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users" for 127.0.0.1 at 2020-07-23 13:07:40 +0000
+Processing by Users::RegistrationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9wsvq+CKKfAFwogGg9I9SFEqNddAlSEAmp/aplN+zECHleRpQoFUwzEG00JwbEro/8AuYSp0DzDGZTOQPe5Esg=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 16 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM `users` WHERE `users`.`id` = 16[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:07:40 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (39.5ms)
+  Rendered layouts/_meta.erb (252.5ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 378ms (Views: 358.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-07-23 13:08:18 +0000
+Processing by Users::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (50.5ms)
+  Rendered layouts/_meta.erb (256.3ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 403ms (Views: 402.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:34:09 +0000
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (48.5ms)
+  Rendered layouts/_meta.erb (295.5ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 442ms (Views: 427.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:34:43 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_meta.erb (363.0ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 495ms (Views: 479.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:34:46 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.2ms)
+  Rendered layouts/_meta.erb (392.4ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 561ms (Views: 559.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:34:48 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (1.0ms)
+  Rendered homes/index.html.erb within layouts/application (55.1ms)
+  Rendered layouts/_meta.erb (387.5ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 561ms (Views: 533.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:34:50 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (51.7ms)
+  Rendered layouts/_meta.erb (259.0ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 404ms (Views: 403.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 13:35:13 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"Hu9peWygAcXzr+jQKkJKxO+pzYmIG6CjCjFpU/ZCgZZKnGePWd+U4IIjBKv/qhai2IrqZf5RI61BxxNQwmTtnQ=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:17
+Redirected to http://localhost/
+Completed 302 Found in 4ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:35:13 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.7ms)
+  Rendered homes/index.html.erb within layouts/application (38.8ms)
+  Rendered layouts/_meta.erb (234.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.4ms)
+Completed 200 OK in 346ms (Views: 333.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:35:16 +0000
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:35:17 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (52.2ms)
+  Rendered layouts/_meta.erb (399.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (4.3ms)
+Completed 200 OK in 567ms (Views: 546.6ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 13:35:24 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/x2OGkJADaGzc1fNE36pAax/6GPp8j4C+6S2vEbqDuirboDsdz+YhML/u7bGlvVnm1zPj5+4vQywUsy/csxi4w=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:35:24 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (48.4ms)
+  Rendered layouts/_meta.erb (330.9ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 488ms (Views: 467.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:35:26 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (58.0ms)
+  Rendered layouts/_meta.erb (359.4ms)
+  Rendered shared/_header.html.erb (1.4ms)
+Completed 200 OK in 533ms (Views: 531.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-23 13:35:31 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"weDLrP67kMwP0FGN4W93mBU/cMrxAUnMhaCYpX8tXQjUpH/ugwZQZvjO5Ki2zGjCNNw//lebijUGCR3anlrqJQ==", "user"=>{"name"=>"細井大輝", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`name` = '細井大輝' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 273ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 13:35:31 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (40.8ms)
+  Rendered layouts/_meta.erb (268.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.3ms)
+Completed 200 OK in 395ms (Views: 378.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 14:30:12 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 27ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 14:30:12 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.8ms)
+  Rendered homes/index.html.erb within layouts/application (41.4ms)
+  Rendered layouts/_meta.erb (329.2ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (8.3ms)
+Completed 200 OK in 506ms (Views: 491.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 14:38:10 +0000
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 14 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (29.3ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 13 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.3ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 12 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.6ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.6ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.0ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 7 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.8ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 6 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (4.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.0ms)
+  Rendered relationships/_follow_button.html.erb (0.6ms)
+  Rendered users/index.html.erb within layouts/application (245.0ms)
+  Rendered layouts/_meta.erb (265.2ms)
+  Rendered shared/_header.html.erb (0.9ms)
+Completed 200 OK in 574ms (Views: 547.8ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:05:47 +0000
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (2.2ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 14 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (12.0ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 13 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 12 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.7ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.7ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.2ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 7 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.5ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 4 AND `relationships`.`follow_id` = 6 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 4 AND `users`.`id` = 5 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  Rendered relationships/_follow_button.html.erb (0.7ms)
+  Rendered users/index.html.erb within layouts/application (296.2ms)
+  Rendered layouts/_meta.erb (322.1ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 757ms (Views: 721.4ms | ActiveRecord: 12.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 15:09:52 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NDEJvxh1XNs1pxrkGWi8eXtmQfRXth+VD04AXBXGoonjRv83sdwAaygehucX5LLsAYzsO4Cmgy7Bh8KerrtKxw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 15:09:53 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (55.3ms)
+  Rendered layouts/_meta.erb (279.9ms)
+  Rendered shared/_header.html.erb (1.2ms)
+Completed 200 OK in 448ms (Views: 425.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 15:09:55 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered relationships/_follow_button.html.erb (13.4ms)
+  Rendered users/index.html.erb within layouts/application (44.5ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `following?' for nil:NilClass):
+    3: <% end %>
+    4: 
+    5: <% unless current_user == user %>
+    6:   <% if current_user.following?(user) %>
+    7:     <%= form_for(current_user.relationships.find_by(follow_id: user.id), html: { method: :delete }) do |f| %>
+    8:       <%= hidden_field_tag :follow_id, user.id %>
+    9:       <%= f.submit 'フォロー解除' ,class:'follow-delete-btn'%>
+  
+app/views/relationships/_follow_button.html.erb:6:in `_app_views_relationships__follow_button_html_erb___2528173595323881072_69832491940080'
+app/views/users/index.html.erb:26:in `block in _app_views_users_index_html_erb___3959493519423690188_69832514670340'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb___3959493519423690188_69832514670340'
+Started GET "/" for 127.0.0.1 at 2020-07-23 15:09:59 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (41.3ms)
+  Rendered layouts/_meta.erb (273.8ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 400ms (Views: 382.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:23:34 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2643.7ms)
+  Rendered layouts/_meta.erb (824.0ms)
+  Rendered shared/_header.html.erb (1.3ms)
+Completed 200 OK in 3585ms (Views: 3555.5ms | ActiveRecord: 6.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:23:44 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k053JI9rldm6/F+ZxAdUXw7omg5b/i3Co3yYQn68nLdLzupSp2KHIg9tDA+PLiHEQD7/HcbQnsf0pJrO4FYSxw==", "user"=>{"name"=>"細井大輝", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`name` = '細井大輝' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 257ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:23:45 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (42.4ms)
+  Rendered layouts/_meta.erb (235.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.1ms)
+Completed 200 OK in 354ms (Views: 340.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:23:47 +0000
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:23:47 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (47.6ms)
+  Rendered layouts/_meta.erb (346.9ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.4ms)
+Completed 200 OK in 499ms (Views: 481.5ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 16:27:08 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"C5i9mtFdj9R+oV4qHLXc7oB/CfcC2n9v883OwBA56scIVbPUkJTAS++8+1EkEXqkTSNveDuooP2zxjdndPFYlw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 37ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:27:08 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_meta.erb (267.3ms)
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 388ms (Views: 374.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:27:13 +0000
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.0ms)
+  Rendered layouts/_meta.erb (284.9ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 412ms (Views: 410.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:27:18 +0000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/vE5L+kzH97T0iNk/mMNxZKbEv9EKwh6l68gKMxPRsNLXG8Q0TMgi6Bj5H3iBytuzNQdg+WGZ3JznBI63NaV7A==", "user"=>{"name"=>"細井大輝", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`name` = '細井大輝' ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 243ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:27:18 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (49.2ms)
+  Rendered layouts/_meta.erb (252.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.0ms)
+Completed 200 OK in 403ms (Views: 385.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-07-23 16:27:21 +0000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AldKoqzNH2IBGoSmhBmJ6WxSE3pfwsLaLhP28IgzMIOO7JNC5R690xPQ0KI1HLG9wpgniBswFidWbyLgRLgbbg=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 4 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:27:21 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (40.5ms)
+  Rendered layouts/_meta.erb (259.8ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 387ms (Views: 372.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/guest_sign_in" for 127.0.0.1 at 2020-07-23 16:27:23 +0000
+Processing by Users::SessionsController#new_guest as HTML
+  Parameters: {"authenticity_token"=>"Unb5uX/pguU13fG80b/+qP5deVrTjItiDWeF0gJGaEXQ7YYuvQAvyYiAeFSFlEjUBCAV9SL65gDB1ppTaRpJUA=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`email` = 'guest@example.com' LIMIT 1[0m
+  ↳ app/models/user.rb:17
+Redirected to http://localhost/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:27:23 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.4ms)
+  Rendered homes/index.html.erb within layouts/application (38.2ms)
+  Rendered layouts/_meta.erb (228.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (3.6ms)
+Completed 200 OK in 348ms (Views: 333.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:29:10 +0000
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:29:10 +0000
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-07-23 16:29:10 +0000
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 11ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2020-07-23 16:29:10 +0000
+  Rendered shared/_flash_messages.html.erb (0.5ms)
+  Rendered homes/index.html.erb within layouts/application (72.3ms)
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered shared/_flash_messages.html.erb (0.6ms)
+  Rendered homes/index.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_meta.erb (353.4ms)
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (4.2ms)
+Completed 200 OK in 538ms (Views: 508.9ms | ActiveRecord: 1.5ms)
+
+
+  Rendered layouts/_meta.erb (317.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/shared/_header.html.erb:20
+  Rendered shared/_header.html.erb (2.6ms)
+Completed 200 OK in 424ms (Views: 412.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:30:40 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (37.5ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.6ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.6ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.7ms)
+  Rendered relationships/_follow_button.html.erb (1.0ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.6ms)
+  Rendered users/index.html.erb within layouts/application (260.3ms)
+  Rendered layouts/_meta.erb (259.7ms)
+  Rendered shared/_header.html.erb (1.0ms)
+Completed 200 OK in 597ms (Views: 568.7ms | ActiveRecord: 13.2ms)
+
+
+Started POST "/relationships" for 127.0.0.1 at 2020-07-23 16:53:53 +0000
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.4.3/lib/active_record/log_subscriber.rb:98
+Processing by RelationshipsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ncLVJOHCufXBUh+6UkRkv93PZRj6yPAYJfqvK+cPzA0m5KWj8z0Nl+ZMe8QGzbM3tl5SX5C0dNwI9z4jlPaoxw==", "follow_id"=>"14", "commit"=>"フォローする"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/controllers/relationships_controller.rb:9
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:33
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:33
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:33
+  [1m[36mRelationship Create (0.4ms)[0m  [1m[32mINSERT INTO `relationships` (`user_id`, `follow_id`, `created_at`, `updated_at`) VALUES (5, 14, '2020-07-23 16:53:53', '2020-07-23 16:53:53')[0m
+  ↳ app/models/user.rb:33
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:33
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/relationships_controller.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/relationships_controller.rb:10
+Redirected to http://localhost/users
+Completed 302 Found in 83ms (ActiveRecord: 16.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-07-23 16:53:53 +0000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` ORDER BY `users`.`created_at` DESC[0m
+  ↳ app/views/users/index.html.erb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  `users`.* FROM `users` WHERE `users`.`id` = 5 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:5
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 14 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.3ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 14 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (13.1ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 13 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.4ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 12 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (4.1ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 11 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 10 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.6ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 9 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  [1m[36mRelationship Load (0.4ms)[0m  [1m[34mSELECT  `relationships`.* FROM `relationships` WHERE `relationships`.`user_id` = 5 AND `relationships`.`follow_id` = 9 LIMIT 1[0m
+  ↳ app/views/relationships/_follow_button.html.erb:7
+  Rendered relationships/_follow_button.html.erb (5.9ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 8 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.3ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 7 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.3ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 6 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.5ms)
+  Rendered relationships/_follow_button.html.erb (0.7ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM `users` INNER JOIN `relationships` ON `users`.`id` = `relationships`.`follow_id` WHERE `relationships`.`user_id` = 5 AND `users`.`id` = 4 LIMIT 1[0m
+  ↳ app/models/user.rb:43
+  Rendered relationships/_follow_button.html.erb (3.6ms)
+  Rendered users/index.html.erb within layouts/application (1378.8ms)
+  Rendered layouts/_meta.erb (623.4ms)
+  Rendered shared/_header.html.erb (1.1ms)
+Completed 200 OK in 2091ms (Views: 2068.5ms | ActiveRecord: 6.5ms)
+
+
