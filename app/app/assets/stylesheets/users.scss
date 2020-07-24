@@ -99,3 +99,25 @@
   border-width: 2px;
   outline: none;
 }
+
+ // ページネーション 
+/*ページネーション自体のデザイン*/
+.pagination{
+  justify-content: center;
+}
+
+// /*ページネーション自体のデザイン*/
+.pagination>li>a {          
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+// フォロー・フォロワーの色
+.profile a {
+  color: #796c6c;
+}
+
+.profile a:hover {
+  color: #504848;
+  text-decoration: none;
+}
