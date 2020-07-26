@@ -1,0 +1,58 @@
+I"P(function() {
+  $(document).on('turbolinks:load', function() {
+    $('#cover-image').click(function() {
+      $('#board_image').click();
+      return false;
+    });
+    $('#board_image').on('change', function(e) {
+      var $preview, file, reader, t;
+      console.log(e);
+      file = e.target.files[0];
+      reader = new FileReader;
+      $preview = $('.board-image');
+      t = this;
+      if (file.type.indexOf('image') < 0) {
+        return false;
+      }
+      reader.onload = (function(file) {
+        return function(e) {
+          $preview.empty();
+          $preview.attr("src", e.target.result);
+        };
+      })(file);
+      reader.readAsDataURL(file);
+    });
+  });
+
+  $(function() {
+    var imgView, num, view_count;
+    num = 1;
+    view_count = document.querySelectorAll('div[id]').length;
+    imgView = function(n) {
+      var reader;
+      reader = new FileReader;
+      document.getElementById('file_' + n).onchange = function(e) {
+        reader.addEventListener('load', function(e) {
+          $('#view_' + n).html('<img src="' + e.target.result + '" />');
+        });
+        reader.readAsDataURL(this.files[0]);
+      };
+    };
+    imgView(num);
+    $('button#add').click(function() {
+      var tr_form;
+      if (view_count === 5) {
+        $('#message').html('※ 追加フォームは' + view_count + 'つまでです。<br>');
+      } else {
+        num = num + 1;
+        view_count = view_count + 1;
+        tr_form = '' + '<tr>' + '<td><input type="text" name="text[]"></td>' + '<td><div  id="view_' + num + '"></div><input type="file" id="file_' + num + '" name="img[]" accept="image/*" /></td>' + '</tr>';
+        $(tr_form).appendTo($('table > tbody'));
+        $('#reload').html('<input type="button" value="リロードする" onclick="window.location.reload();" /><br>');
+        imgView(num);
+      }
+    });
+  });
+
+}).call(this);
+:ET

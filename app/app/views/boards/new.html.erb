@@ -1,0 +1,15 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'boards' %>
+<% end %>
+
+<div class="background-board">
+<div class="container">
+  <%= render 'shared/flash_messages'%>
+  <div class="row">
+    <div class="col-md-12 board-new-background">
+      <h4 class="text-center board-title">新規投稿</h4>
+      <%= render 'form',board: @board %>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,26 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'boards' %>
+<% end %>
+
+<div class="container">
+  <h1 class="text-center">投稿一覧画面</h1>
+  <div class="row">
+    <% @boards.each do |board| %>
+      <div class="col-md-3">
+        <div class="index-color">
+          <%= link_to board_path(board) do %>
+            <%= attachment_image_tag board, :image ,class:"top-image"%>
+          <% end %>
+          <div class="index-title">
+            <%= board.title %>
+          </div>
+          <%= link_to user_path(board.user.id) do %> 
+            <%= attachment_image_tag board.user, :profile_image,fallback: "noimage.png",class:"user-image"%>
+          <% end %>
+          <%= link_to board.user.name ,user_path(board.user.id)%><br>
+          <%= board.updated_at.strftime("%Y-%m-%d %H:%M") %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

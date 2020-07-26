@@ -1,0 +1,79 @@
+<div class="background-board">
+  <div class="container">
+    <%= render 'shared/flash_messages'%>
+    <div class="row">
+      <div class="col-md-12 board-new-background">
+        <h4 class="text-center board-title">新規投稿</h4>
+        <% if @board.user.profile_image.present? %>
+          <%= link_to user_path(@board.user) do%>
+            <%= attachment_image_tag @board.user,:profile_image,class:'profileImage-index'%>
+          <% end %>
+        <%else%>
+          <%= link_to user_path(@board.user) do%>
+            <%= image_tag 'noimage.png' ,class:'profileImage-index' %>
+          <% end %>
+        <% end %>
+        <%= @board.user.name%>
+        <%= @board.created_at.strftime("%Y年%m月%d日")%>に更新
+        <% @board.tags.each do |tag|%>
+          <span class="badge badge-primary"><%= tag.name %></span>
+        <% end %>
+        <%= @board.title%>
+        <div class="">
+          <%= attachment_image_tag @board, :image,class:'' %>
+        </div>
+        <%= @board.reason%>
+        <%= @board.preparation%>
+        <%= @board.onepoint%>
+        <% if @board.user.id == current_user.id %>
+          <%= link_to "編集",edit_board_path(@board), class:"btn btn-success"%>
+        <% end %>
+        <% if @board.user.id == current_user.id %>
+          <%= link_to "削除", board_path(@board),method: :delete, data: {confirm: "削除しますか？"},class:'btn btn-danger delete'%>
+        <% end %>
+        <%= link_to user_path(@board.user) do %>
+          <%= @board.user.name %>さんのページへ
+        <% end %>
+      </div> 
+    </div> 
+  </div> 
+</div> 
+
+    <%# if current_user.already_favorited?(@board) %>
+      <%#= link_to board_favorites_path(@board),method: :delete do %>
+        <%# <i class="fas fa-heart"></i> %>
+      <%# end %>
+    <%# else %>
+      <%#= link_to board_favorites_path(@board),method: :post do %>
+        <%# <i class="far fa-heart"></i> %>
+      <%# end %>
+    <%# end %>
+    <%#= @board.favorites.count %>
+    <%# <div class="make">
+      <h2>手順</h2>
+    </div> %>
+      <%# @board_details.each do |board_detail| %>
+        <%# <div class="text-show "> %>
+          <%#= attachment_image_tag board_detail,:image ,class:'image-width' %>
+          <%# <p class="font-size"><%= board_detail.body%></p>
+        <%# </div> %>
+      <%#end %>
+  <%# </div> %>
+  
+  <%#= link_to '質問一覧画面',board_comments_path(@board) %>
+
+<%# <h1>質問入力</h1> %>
+<%# <div> %>
+  <%#= form_for [@board, @comment] do |f| %>
+<%#= f.hidden_field :board_id, value: @board.id %>
+  <%# <div class="form-group"> %>
+    <%#= f.text_field :name, autofocus: true,class:'form-control', autocomplete: 'name',:placeholder => "name" %>
+  <%# </div>
+  <div class="form-group"> %>
+    <%#= f.text_field :title, autofocus: true,class:'form-control', autocomplete: 'title',:placeholder => "title" %>
+  <%# </div>
+  <div class="form-group"> %>
+      <%#= f.text_area :question, autofocus: true,class:'form-control', autocomplete: 'question',:placeholder => "question" %>
+  <%# </div> %>
+    <%#= f.submit '送信', class: 'btn btn-primary' %>
+  <%# end %>

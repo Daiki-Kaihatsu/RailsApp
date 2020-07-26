@@ -405,3 +405,453 @@ from (pry):1:in `index'
 === puma shutdown: 2020-07-24 04:11:19 +0000 ===
 - Goodbye!
 === puma startup: 2020-07-24 04:11:29 +0000 ===
+=== puma startup: 2020-07-24 12:46:55 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 12:59:26 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 12:59:36 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 13:00:45 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 13:00:52 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 13:04:33 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 13:04:41 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 13:12:05 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 13:12:13 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 13:22:21 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 13:22:29 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 13:23:00 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-24 13:23:07 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-24 16:02:24 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 04:17:30 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-25 04:33:38 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 04:33:48 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> [K[2] pry(#<BoardsController>)> ex- Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 10:58:00 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-25 11:08:04 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 11:08:07 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> [K[2] pry(#<BoardsController>)> e- Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:14:52 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:17:18 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:9 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+ =>  [1;34m9[0m:   binding.pry
+    [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:19:08 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:20:59 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:23:49 +0000 ===
+
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> 
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> 
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> 
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> 
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> 
+From: /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     6: def show
+     7:   @board_id = Board.find(params[:id]).id
+     8:   @board= Board.find(params[:id])
+     9:   binding.pry
+ => 10: end
+
+[0G[1] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-25 11:27:31 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 11:27:53 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:10 BoardsController#show:
+
+     [1;34m6[0m: [32mdef[0m [1;34mshow[0m
+     [1;34m7[0m:   @board_id = [1;34;4mBoard[0m.find(params[[33m:id[0m]).id
+     [1;34m8[0m:   @board= [1;34;4mBoard[0m.find(params[[33m:id[0m])
+     [1;34m9[0m:   binding.pry
+ => [1;34m10[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:45:03 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 11:48:15 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-25 11:55:18 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 11:55:57 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-25 11:58:54 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-25 12:00:04 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> 
+[11] pry(#<BoardsController>)> 
+[12] pry(#<BoardsController>)> 
+[13] pry(#<BoardsController>)> 
+[14] pry(#<BoardsController>)> 
+[15] pry(#<BoardsController>)> 
+[16] pry(#<BoardsController>)> 
+[17] pry(#<BoardsController>)> 
+[18] pry(#<BoardsController>)> 
+[19] pry(#<BoardsController>)> 
+[20] pry(#<BoardsController>)> 
+[21] pry(#<BoardsController>)> 
+[22] pry(#<BoardsController>)> 
+[23] pry(#<BoardsController>)> 
+[24] pry(#<BoardsController>)> 
+[25] pry(#<BoardsController>)> 
+[26] pry(#<BoardsController>)> 
+[27] pry(#<BoardsController>)> 
+[28] pry(#<BoardsController>)> 
+[29] pry(#<BoardsController>)> 
+[30] pry(#<BoardsController>)> 
+[31] pry(#<BoardsController>)> 
+[32] pry(#<BoardsController>)> 
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 12:08:36 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> [K[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 12:12:00 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> 
+[11] pry(#<BoardsController>)> 
+[12] pry(#<BoardsController>)> 
+[13] pry(#<BoardsController>)> 
+[14] pry(#<BoardsController>)> 
+[15] pry(#<BoardsController>)> 
+[16] pry(#<BoardsController>)> 
+[17] pry(#<BoardsController>)> [K[17] pry(#<BoardsController>)> 
+[18] pry(#<BoardsController>)> 
+[19] pry(#<BoardsController>)> 
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> 
+[11] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 12:18:01 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> 
+[11] pry(#<BoardsController>)> 
+[12] pry(#<BoardsController>)> 
+[13] pry(#<BoardsController>)> 
+[14] pry(#<BoardsController>)> 
+[15] pry(#<BoardsController>)> z
+NameError: undefined local variable or method `z' for #<BoardsController:0x0000558be9901760>
+from (pry):1:in `index'
+[16] pry(#<BoardsController>)> 
+[17] pry(#<BoardsController>)> xa
+NameError: undefined local variable or method `xa' for #<BoardsController:0x0000558be9901760>
+from (pry):2:in `index'
+[18] pry(#<BoardsController>)> s
+NameError: undefined local variable or method `s' for #<BoardsController:0x0000558be9901760>
+from (pry):3:in `index'
+[19] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 12:22:29 +0000 ===
+
+[1mFrom:[0m /app/app/controllers/boards_controller.rb:5 BoardsController#index:
+
+    [1;34m2[0m: [32mdef[0m [1;34mindex[0m
+    [1;34m3[0m:   @boards = [1;34;4mBoard[0m.all
+    [1;34m4[0m:   binding.pry
+ => [1;34m5[0m: [32mend[0m
+
+[0G[1] pry(#<BoardsController>)> 
+[2] pry(#<BoardsController>)> 
+[3] pry(#<BoardsController>)> 
+[4] pry(#<BoardsController>)> 
+[5] pry(#<BoardsController>)> 
+[6] pry(#<BoardsController>)> 
+[7] pry(#<BoardsController>)> 
+[8] pry(#<BoardsController>)> 
+[9] pry(#<BoardsController>)> 
+[10] pry(#<BoardsController>)> 
+[11] pry(#<BoardsController>)> 
+[12] pry(#<BoardsController>)> s
+NameError: undefined local variable or method `s' for #<BoardsController:0x00007f2b71284e18>
+from (pry):1:in `index'
+[13] pry(#<BoardsController>)> 
+[14] pry(#<BoardsController>)> 
+[15] pry(#<BoardsController>)> 
+[16] pry(#<BoardsController>)> 
+[17] pry(#<BoardsController>)> 
+[18] pry(#<BoardsController>)> 
+[19] pry(#<BoardsController>)> 
+[20] pry(#<BoardsController>)> 
+[21] pry(#<BoardsController>)> q
+NameError: undefined local variable or method `q' for #<BoardsController:0x00007f2b71284e18>
+from (pry):2:in `index'
+[22] pry(#<BoardsController>)> q
+NameError: undefined local variable or method `q' for #<BoardsController:0x00007f2b71284e18>
+from (pry):3:in `index'
+[23] pry(#<BoardsController>)> 
+[24] pry(#<BoardsController>)> w
+NameError: undefined local variable or method `w' for #<BoardsController:0x00007f2b71284e18>
+from (pry):4:in `index'
+[25] pry(#<BoardsController>)> w
+NameError: undefined local variable or method `w' for #<BoardsController:0x00007f2b71284e18>
+from (pry):5:in `index'
+[26] pry(#<BoardsController>)> e
+NameError: undefined local variable or method `e' for #<BoardsController:0x00007f2b71284e18>
+from (pry):6:in `index'
+[27] pry(#<BoardsController>)> r
+NameError: undefined local variable or method `r' for #<BoardsController:0x00007f2b71284e18>
+from (pry):7:in `index'
+[28] pry(#<BoardsController>)> 
+[29] pry(#<BoardsController>)> r
+NameError: undefined local variable or method `r' for #<BoardsController:0x00007f2b71284e18>
+from (pry):8:in `index'
+[30] pry(#<BoardsController>)> t ww:cvieee
+NoMethodError: undefined method `ww' for #<BoardsController:0x00007f2b71284e18>
+from (pry):9:in `index'
+[31] pry(#<BoardsController>)> e
+NameError: undefined local variable or method `e' for #<BoardsController:0x00007f2b71284e18>
+from (pry):10:in `index'
+[32] pry(#<BoardsController>)> 
+[33] pry(#<BoardsController>)> q
+NameError: undefined local variable or method `q' for #<BoardsController:0x00007f2b71284e18>
+from (pry):11:in `index'
+[34] pry(#<BoardsController>)> 
+[35] pry(#<BoardsController>)> 
+[36] pry(#<BoardsController>)> - Gracefully stopping, waiting for requests to finish
+=== puma startup: 2020-07-25 12:56:40 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-26 06:22:17 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-26 06:22:27 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-26 06:27:37 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-26 06:27:45 +0000 ===
+- Gracefully stopping, waiting for requests to finish
+=== puma shutdown: 2020-07-26 06:28:35 +0000 ===
+- Goodbye!
+=== puma startup: 2020-07-26 06:28:43 +0000 ===

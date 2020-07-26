@@ -1,0 +1,102 @@
+<%=form_with(model: board, local: true) do |f|%>
+  <div id="cover-image" class="relative board-title-image">
+    <% if board.image_id.present? %>
+      <%= image_tag attachment_url(board, :image),class:'board-image'%>
+    <% else %>
+      <%= image_tag 'none_image.png',class:'board-image'%>
+    <% end %>
+    <i class="fa fa-camera"></i>
+  </div>
+
+    <%= f.attachment_field :image %><br>
+    <div class="form-size-board">
+      <%= f.label :'タイトル'%>
+      <%= f.text_field :title,class:'form-border-title',:placeholder => "タイトル" %><br>
+    </div><br>
+    <div class="form-size-board">
+      <%= f.label :'用意するもの'%>
+      <%= f.text_area :preparation,class:'form-border-preparation',rows: 6,:placeholder => "用意するもの"%>
+    </div><br>
+    <div class="form-size-board">
+      <%= f.label :'投稿の生い立ち'%>
+      <%= f.text_area :reason,class:'form-border-reason',rows: 5,:placeholder => "投稿の生い立ち"%><br>
+    </div>
+  <%= f.hidden_field :id %>
+  <hr>
+
+  <%# <div class="board_details"> %>
+    <%#= f.fields_for :board_detail do |df| %>
+      <%#= render partial: "board_detail_form",locals: {f: df } %>
+    <%# end %>
+    
+    
+    <%# <div class="links tag-tsuika"> %>
+      <%#= link_to_add_field( "追加", f, :board_detail ,{})%>
+    <%# </div> %>
+
+<%# <table>
+  <thead>
+    <tr>
+      <th>材料</th>
+      <th>数量</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="text" name="text_1[]"></td>
+      <td><input type="text" name="text_2[]"></td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td ><button id="add" type="button">追加</button></td>
+    </tr>
+  </tfoot>
+</table> %>
+
+<table>
+        <thead>
+        <tr>
+        <th>テキスト</th>
+        <th>画像</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><input type="text" name="text[]"></td>
+            <td>
+                <div id="view_1"></div>
+                <input type="file" id="file_1" name="img[]" accept="image/*">
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td>
+                <button id="add" type="button">追加</button><span id="reload"></span>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+    
+    <div class="form-group">
+      <span>タグ</span>
+      <%= f.collection_check_boxes(:tag_ids, Tag.all, :id, :name) do |tag| %> 
+        <div class="form-check"> 
+          <%= tag.label class: 'form-check-label' do %> 
+          <div class="index-checkbox">
+            <%= tag.check_box class: 'form-check-input' %> 
+          </div>
+            <%= tag.text %> 
+          <% end %> 
+        </div> 
+      <% end %> 
+    </div>
+  <div class="form-size-board">
+    <%= f.label :'ポイント'%>
+    <%= f.text_area :onepoint,class:'form-border-point',rows: 5,:placeholder => "ワンポイント"%><br>
+  </div>
+    <%= f.submit %>
+  </div>
+<% end %>
+

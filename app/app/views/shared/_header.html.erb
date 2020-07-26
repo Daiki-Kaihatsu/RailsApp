@@ -14,14 +14,14 @@
             <%= link_to 'ユーザー一覧',users_path,class:'nav-link text-light'%>
           </li>
         <li class="nav-item ">
-          <%= link_to '投稿一覧','#',class:'nav-link text-light'%>
+          <%= link_to '投稿一覧',boards_path,class:'nav-link text-light'%>
         </li>
         <% end %>
       </ul>
       <ul class="navbar-nav">
         <% if user_signed_in? %>
             <li class="nav-item ">
-              <%= link_to '新規投稿','#',class: 'nav-link text-light' %>
+              <%= link_to '新規投稿',new_board_path,class: 'nav-link text-light' %>
             </li>
             <li class="nav-item ">
               <%= link_to 'マイページ',current_user,class: 'nav-link text-light' %>

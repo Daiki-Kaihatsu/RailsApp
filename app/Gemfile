@@ -30,6 +30,7 @@ group :development do
 
   # デバッグ
   gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :test do

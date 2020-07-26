@@ -1,0 +1,248 @@
+.board-title{
+  margin-top: 30px;
+  color: slategray;
+}
+
+// .image_width{
+//   width:350px;
+// }
+
+
+// h2{
+//   text-align:center;
+//   margin-top:5%;
+// }
+
+// .title-image-center{
+//   text-align:center;
+// }
+
+// .image-width{
+//   width: 350px;
+//   height: 250px;
+//   object-fit: cover;
+// }
+
+// .text{
+//   margin-bottom: 3%;
+//   margin-top:3%;
+//   position: relative;
+//   background: #fff0cd;
+//   box-shadow: 0px 0px 0px 5px #fff0cd;
+//   border: dashed 2px white;
+//   padding: 0.2em 0.5em;
+//   color: #454545;
+// }
+
+// .text:after{
+//     position: absolute;
+//     content: '';
+//     right: -7px;
+//     top: -7px;
+//     border-width: 0 15px 15px 0;
+//     border-style: solid;
+//     border-color: #ffdb88 #fff #ffdb88;
+//     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+// }
+
+// .text p {
+//     margin: 0; 
+//     padding: 0;
+//     font-size:14px;
+//     padding-left: 20px;
+// }
+
+.relative{
+  position:relative;
+  
+  i{
+    position:absolute;
+    top:44%;
+    left:48%;
+    font-size: 40px;
+    color:white;
+  }
+}
+  #board_image{
+    display:none;
+  }
+
+  // 投稿フォーム
+// 投稿フォーム
+.form-border-title{
+  border-radius: 33px;
+  background-color: white;
+  border: 1px solid #ced4da;
+}
+
+.form-size-board{
+  width: 800px;
+  margin:0 auto;
+}
+
+.form-border-preparation{
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.form-border-reason{
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+.form-border-point{
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid #ced4da;
+  width: 100%;
+}
+
+// #cover-image{
+//   cursor:pointer;
+// }
+
+// .relative-detail{
+//   position:relative;
+  
+//   i{
+//     position:absolute;
+//     top: 39%;
+//     left: 19%;
+//     font-size: 22px;
+//     color:white;
+//   }
+// }
+
+// .board_detail_image{
+//   // display:none;
+//    width: 250px;
+//    margin-left: 5px;
+// }
+
+.board-image{
+  cursor:pointer;
+  width: 500px;
+  height: 350px;
+  border-radius: 30px;
+}
+
+.board-title-image{
+  text-align: center;
+}
+
+// .parent{
+//   display:flex;
+// }
+
+// .user-link-update{
+//   width: 100%;
+//   padding: 12px 10px;
+// }
+
+// .favorite{
+//   text-align: right;
+// }
+
+
+
+
+
+// .itiran-title{
+//   padding: 5px;
+//   font-weight: bold;
+//   text-align: center;
+// }
+
+// .span-title{
+//   margin: 0 auto;
+//   font-weight: bold;
+// }
+
+// .image-padding{
+//   padding-left:34px;
+// }
+
+// .text-body{
+//   margin-bottom:0;
+//   width: 415px;
+// }
+
+// .text-show{
+//   margin-bottom: 3%;
+//   margin-top:3%;
+//   position: relative;
+//   background: #fff0cd;
+//   box-shadow: 0px 0px 0px 5px #fff0cd;
+//   border: dashed 2px white;
+//   padding: 0.2em 0.5em;
+//   color: #454545;
+//   display: flex;
+// }
+
+// .text-show:after{
+//     position: absolute;
+//     content: '';
+//     right: -7px;
+//     top: -7px;
+//     border-width: 0 15px 15px 0;
+//     border-style: solid;
+//     border-color: #ffdb88 #fff #ffdb88;
+//     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+// }
+
+// .text-show p {
+//     margin: 0; 
+//     padding: 0;
+//     font-size:14px;
+//     padding-left: 20px;
+// }
+
+
+// 投稿一覧画面
+.top-image{
+  width: 100%;        
+  height: 180px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+}
+
+.index-color{
+  border: solid 1px steelblue;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.user-image{
+  width: 55px;
+  height: 57px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.index-title{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-check-input{
+  width: 230px;
+}
+
+.form-group{
+  margin-left: 155px;
+}
+
+.board-new-background{
+  background-color: white;
+  margin-top: 80px;
+  border-radius: 20px;
+  border: solid 1px darkgray;
+}
+
+.background-board{
+  background: cornsilk;
+}
