@@ -1,0 +1,21 @@
+// 追加
+.add{
+  display: flex;
+}
+
+.add-relative{
+  position:relative;
+  
+  i{
+    position:absolute;
+    top:42%;
+    left:42%;
+    font-size: 40px;
+    color:white;
+  }
+}
+
+.text{
+  width: 400px;
+  height: 219px;
+}

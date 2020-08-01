@@ -60,7 +60,13 @@
     top:44%;
     left:48%;
     font-size: 40px;
-    color:white;
+    color:rgba(0,0,0,0.5);
+  }
+  .image-title{
+    position:absolute;
+    top:58%;
+    left:43%;
+    color:rgba(0,0,0,0.5);
   }
 }
   #board_image{
@@ -76,7 +82,7 @@
 }
 
 .form-size-board{
-  width: 800px;
+  width: 100%;
   margin:0 auto;
 }
 
@@ -123,12 +129,20 @@
 //    margin-left: 5px;
 // }
 
+
+
+.image-shin{
+  opacity: 0.2;
+}
+
 .board-image{
   cursor:pointer;
   width: 500px;
   height: 350px;
   border-radius: 30px;
 }
+
+
 
 .board-title-image{
   text-align: center;
@@ -246,3 +260,8 @@
 .background-board{
   background: cornsilk;
 }
+
+#imageFile{
+  display: none;
+}
+

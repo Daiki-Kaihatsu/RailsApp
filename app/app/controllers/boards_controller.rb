@@ -2,13 +2,14 @@ class BoardsController < ApplicationController
   def index
     @boards = Board.all
   end
-
+  
   def show
     @board= Board.find(params[:id])
   end
 
   def new
     @board = Board.new
+    @board.board_details.build
   end
 
   def edit
@@ -36,7 +37,7 @@ class BoardsController < ApplicationController
   private
 
     def board_params
-      params.require(:board).permit(:id,:title,:image,:reason,:preparation,:onepoint, tag_ids: [])
+      params.require(:board).permit(:title,:image,:reason,:preparation,:onepoint, tag_ids: [],board_details_attributes: [:id, :body, :image_detail, :_destroy])
     end
 
 end

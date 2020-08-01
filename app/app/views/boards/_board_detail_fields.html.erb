@@ -1,0 +1,37 @@
+<% content_for :css do %>
+  <%= stylesheet_link_tag 'board_details' %>
+<% end %>
+
+<div class="nested-fields">
+  <div class="add">
+    <div class="imgPreview">
+      <%= f.text_area:body,class:'text',rows:5,cols:1,:placeholder => "説明文を入力"  %><br>
+    </div>
+    <div id="add-image" class="add-relative"> 
+      <%= image_tag 'none_image.png',class:'add-image'%>
+      <i class="fa fa-camera add-i"></i>
+    </div> 
+    <%= f.attachment_field :image_detail ,type: "file", id: "imageFile", accept: "image/*"%>
+  </div>
+    <%= f.hidden_field :id%>
+    <%= link_to_remove_association( "remove task", f) %>
+</div>
+
+
+
+<%# <script data-turbolinks-eval="false">
+  $("#imageFile").change(function() {
+    if (!this.files.length) {
+      return;
+    }
+
+    var file = $(this).prop("files")[0];
+    var fr = new FileReader();
+    $(".imgPreview").css("background-image", "none");
+    fr.onload = function() {
+      $(".imgPreview").css("background-image", "url(" + fr.result + ")");
+    };
+    fr.readAsDataURL(file);
+    $(".imgPreview img").css("opacity", 0);
+  });
+</script> %>

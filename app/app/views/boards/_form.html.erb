@@ -13,71 +13,23 @@
       <%= f.label :'タイトル'%>
       <%= f.text_field :title,class:'form-border-title',:placeholder => "タイトル" %><br>
     </div><br>
-    <div class="form-size-board">
-      <%= f.label :'用意するもの'%>
-      <%= f.text_area :preparation,class:'form-border-preparation',rows: 6,:placeholder => "用意するもの"%>
-    </div><br>
-    <div class="form-size-board">
-      <%= f.label :'投稿の生い立ち'%>
-      <%= f.text_area :reason,class:'form-border-reason',rows: 5,:placeholder => "投稿の生い立ち"%><br>
-    </div>
+
   <%= f.hidden_field :id %>
   <hr>
 
-  <%# <div class="board_details"> %>
-    <%#= f.fields_for :board_detail do |df| %>
-      <%#= render partial: "board_detail_form",locals: {f: df } %>
-    <%# end %>
-    
-    
-    <%# <div class="links tag-tsuika"> %>
-      <%#= link_to_add_field( "追加", f, :board_detail ,{})%>
-    <%# </div> %>
+  <div class="board_details">
+  <%= f.fields_for :board_details do |df| %>
+    <%= render partial: "board_detail_fields",locals: {f: df } %>
+  <% end %>
 
-<%# <table>
-  <thead>
-    <tr>
-      <th>材料</th>
-      <th>数量</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><input type="text" name="text_1[]"></td>
-      <td><input type="text" name="text_2[]"></td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td ><button id="add" type="button">追加</button></td>
-    </tr>
-  </tfoot>
-</table> %>
+  <%# 追加ボタン %>
+  <div class="links">
+      <%= link_to_add_association( '追加', f, :board_details)%>
+  </div>
 
-<table>
-        <thead>
-        <tr>
-        <th>テキスト</th>
-        <th>画像</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td><input type="text" name="text[]"></td>
-            <td>
-                <div id="view_1"></div>
-                <input type="file" id="file_1" name="img[]" accept="image/*">
-            </td>
-        </tr>
-        </tbody>
-        <tfoot>
-        <tr>
-            <td>
-                <button id="add" type="button">追加</button><span id="reload"></span>
-            </td>
-        </tr>
-        </tfoot>
-    </table>
+  
+
+
     
     <div class="form-group">
       <span>タグ</span>

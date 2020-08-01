@@ -30,28 +30,3 @@ $(document).on 'turbolinks:load', ->
     return
   return
 
-# 追加フォーム(画像プレビューなし)
-$ ->
-  num = 1
-  imgView = (n) ->
-    reader = new FileReader
-    document.getElementById('file_' + n).onchange = (e) ->
-      reader.addEventListener 'load', (e) ->
-        $('#view_' + n).html '<img src="' + e.target.result + '" />'
-        return
-      reader.readAsDataURL @files[0]
-      return
-
-    return
-
-  imgView num
-  $('button#add').click ->
-      num = num + 1
-      tr_form = '' + '<tr>' + '<td><input type="text" name="text[]"></td>' + '<td><div  id="view_' + num + '"></div><input type="file" id="file_' + num + '" name="img[]" accept="image/*" /></td>' + '</tr>'
-      $(tr_form).appendTo $('table > tbody')
-      $('#reload').html '<input type="button" value="リロードする" onclick="window.location.reload();" /><br>'
-      imgView num
-    return
-  return
-
-# 追加フォーム(画像プレビューあり)
